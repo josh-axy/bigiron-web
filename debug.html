@@ -11,37 +11,38 @@
         body {
             font-family: 'Microsoft YaHei thin';
         }
-        .navbar-left{
-                margin: 5px 0px 0px 20px;
-        }
+	h1,h2,h3{
+	font-family:'Microsoft Yahei'
+	}
         .navbar-inverse {
             background: #24292e none;
         }
+	.navbar-left{
+	        margin: 5px 0px 0px 20px;
+	}
         .navbar-right {
             padding-right: 30px;
         }
         .up-blank {
             padding-top: 50px;
         }
-        .thumbnail-image {
-            border-radius: 5px;
-            width: 242px;
-            height: 200px;
-        }
+	.navbar-body{
+	padding-top:3px;
+	}
     </style>
 </head>
 <body>
 
 <!-- nav bar -->
 <nav class="navbar-inverse navbar navbar-default navbar-fixed-top">
-    <div class="navbar-left">
+    <div class="navbar-body navbar-left">
         <img width="42" height="42" src="images/icon/navbar_icon.png">
     </div>
-    <div class="navbar-header">
+    <div class="navbar-body navbar-header">
         <a class="navbar-brand">佬铁会</a>
     </div>
 
-    <div class="navbar-collapse collapse">
+    <div class="navbar-body navbar-collapse collapse">
         <ul class="nav navbar-nav">
             <li class="active"><a href="">主页</a></li>
             <li><a href="skill/">技能树</a></li>
@@ -55,7 +56,7 @@
                         <li><a href="user/">用户中心</a></li>
                         <li><a href="#">已参与课程</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="login.html">退出登录</a></li>
+                        <li><a href="logout.html">退出登录</a></li>
                     </ul>
                 </li>
             </ol>
@@ -93,7 +94,6 @@
         <div class="col-sm-4 col-md-3">
             <div class="thumbnail">
                 <div class="caption">
-                    <img class="thumbnail-image" src="images/铁铁日记%20C语言.jpg">
                     <h3>关雎</h3>
                     <p>关关雎鸠，在河之洲。</p>
                     <p>
