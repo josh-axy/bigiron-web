@@ -9,49 +9,58 @@
     <meta name="author" content="">
     <link href="images/icon/site_logo_small.ico" rel="shortcut icon">
     <title>佬铁会</title>
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar-inverse navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div id="main-navbar" class="navbar-wrapper">
+        <div id="main-nav-container" class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="#"><img width="40" height="40" src="images/icon/navbar_icon.png"></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="">主页</a></li>
-                <li><a href="skill/">技能树</a></li>
-            </ul>
-            <div class="navbar-right">
-                <ol class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户头像<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="user/">用户中心</a></li>
-                            <li><a href="#">已参与课程</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="logout.html">退出登录</a></li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </nav>
+                        <a class="navbar-brand" href="#"><img width="40" height="40" src="images/icon/navbar_icon.png"></a>
+                    </div>
 
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="">主页</a></li>
+                            <li><a href="skill/">技能树</a></li>
+                        </ul>
+                        <div class="navbar-right">
+                            <ol class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户<span class="caret"></span>
+                        </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="user/">用户中心</a></li>
+                                        <li><a href="#">已参与课程</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">其他选项</li>
+                                        <li><a href="logout.html">退出登录</a></li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
 
     <!-- carousel -->
-    <div id="index-gallery">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div id="mainCarousel" class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
@@ -60,9 +69,15 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="images/logo/signed_logo.png" alt="First slide">
+
                 </div>
                 <div class="item">
                     <img src="images/logo/unsigned_logo.png" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h1>关于我们</h1>
+                        <p>这是一个来自 <code>BIT</code> 的团队，我们致力于让技能在人与人之间流动起来。</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
                 </div>
                 <a class="carousel-control left" href="#mainCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -190,12 +205,26 @@
     <script src="https://cdn.bootcss.com/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>');
-        $('.masonry').imagesLoaded(function() {
+        $('.masonry').imagesLoaded(function () {
             $('.masonry').masonry({
                 itemSelector: '.item'
             });
         });
-
+        $(function () {
+            $(window).scroll(function () {
+                var scrollTop = $(this).scrollTop(); //滚动高度
+                if (scrollTop > 800) {
+                    $("#main-navbar").removeClass("navbar-wrapper");
+                    $("#main-navbar").addClass("navbar-fixed-top");
+                    $("#main-nav-container").removeClass("container");
+                }
+                if (scrollTop <= 800) {
+                    $("#main-navbar").addClass("navbar-wrapper");
+                    $("#main-navbar").removeClass("navbar-fixed-top");
+                    $("#main-nav-container").addClass("container");
+                }
+            });
+        });
     </script>
 
 </body>
