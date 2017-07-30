@@ -1,3 +1,4 @@
+/*Global Customize*/
 body {
     padding-bottom: 40px;
     font-family: 'Microsoft YaHei thin',sans-serif;
@@ -11,7 +12,7 @@ h3 {
 }
 
 .navbar-inverse {
-    background: #24292e none;
+    background: #24292e;
     font-family: 'Microsoft YaHei UI bold','Microsoft YaHei',sans-serif;
 }
 
@@ -43,6 +44,80 @@ h3 {
 .navbar-fixed-top .navbar{
     box-shadow: 1px 2px 8px #333;
 }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 100%;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-inner > .item > img {
+  margin-top: 0em;
+}
+
+
+/* Customize setting
+--------------------------------------------------*/
+
+.navbar-brand {
+    margin: -8px -5px 5px 5px;
+}
+
+.navbar-right {
+    padding-right: 30px;
+}
+
+.up-blank {
+    padding-top: 10px;
+}
+.nav{
+    font-size: 16px;
+}
+.thumbnail-image {
+    border-radius: 5px;
+    height: auto;
+    border-style:solid;
+    box-shadow:1px 2px 8px #DDD;
+}
+.thumbnail-div{
+    width: 103%;
+    margin: -4px 0px 0px -4px;
+}
+#index-gallery{
+    margin-top: -1.4em;
+}
+  .intro-background{
+    background-color: #DDD;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+}
+  .intro{
+    text-align: center;
+    color: #F0F0F0!important;
+
+    line-height: 2em;
+    font-size: 1.4em;
+  }
+  .copyright-background{
+    font-family: 'Microsoft YaHei UI bold','Microsoft YaHei',sans-serif;
+    text-align: center;
+    color: #555;
+    text-shadow: 1px 1px 1px #ddd;
+    margin: 4em 0em -10em;
+    line-height: 2em;
+  }
+  #show-main-intro{
+    width: 108px;
+    margin:20px auto;
+  }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -83,7 +158,7 @@ h3 {
   }
 }
 
-@media (max-width: 720px){
+@media (max-width: 480px){
     #myCarousel {
   margin-top: 3.64em;
 }
@@ -91,50 +166,8 @@ h3 {
         display: none!important;
     }
 }
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 100%;
-  margin-bottom: 30px;
+@media(max-width:1200px){
+  .thumbnail-div{
+    width: 104%!important;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
 }
-
-.carousel-inner > .item > img {
-  margin-top: 0em;
-}
-
-
-/*
---------------------------------------------------*/
-
-.navbar-brand {
-    margin: -8px -5px 5px 5px;
-}
-
-.navbar-right {
-    padding-right: 30px;
-}
-
-.up-blank {
-    padding-top: 50px;
-}
-.nav{
-    font-size: 16px;
-}
-.thumbnail-image {
-    border-radius: 5px;
-    height: auto;
-    width: 111.5%;
-    box-shadow: 1px 2px 8px #CCC;
-    margin: 0px 0px 0px -13px;
-}
-
-#index-gallery{
-    margin-top: -1.4em;
-}
-

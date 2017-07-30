@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ff743e;
+    text-align: center;
+}
+
+#return-index {
+    margin-top: 150px;
+    width: 250px;
+    height: auto;
+}
+
+.input-group {
+    width: 350px;
+    margin: 0px auto;
+}
+
+#login-submit{
+    margin:20px auto;
+}

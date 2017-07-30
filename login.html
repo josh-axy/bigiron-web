@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-        <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
-        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-        <title>登录佬铁会</title>
-        <meta charset="utf-8">
-        <style type="text/css">
-            body{
-                font-family: Microsoft Yahei;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="menu">            
-            <span><a href="index.html" id="return_index"><img src="images/icon/login_icon.png" alt="返回首页"></a></span>
+
+<head>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <title>登录佬铁会</title>
+    <meta charset="utf-8">
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-signin input-group">
+        <h2 class="form-signin-heading"><img id="return-index" src="images/icon/login_icon.png" alt="返回首页"></h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="邮箱" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 记住我
+          </label>
         </div>
-        <div id="main">
-            <form>
-                
-            </form>
-        </div>
-    </body>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" href="index.html">Sign in</button>
+      </form>
+    </div>
+</body>
 </html>
