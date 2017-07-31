@@ -17,48 +17,49 @@
 
 <body>
     <!-- nav bar -->
-    <div id="main-navbar" class="navbar-wrapper">
-        <div id="main-nav-container" class="container">
 
-            <nav class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container navbar-content">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                        <a class="navbar-brand" href="#"><img width="40" height="40" src="images/icon/navbar_icon.png"></a>
-                    </div>
+                <a class="navbar-brand" href="#"><img width="40" height="40" src="images/icon/navbar_icon.png"></a>
+            </div>
 
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="">主页</a></li>
-                            <li><a href="skill/">技能树</a></li>
-                        </ul>
-                        <div class="navbar-right">
-                            <ol class="nav navbar-nav">
-                                <li class="dropdown">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户<span class="caret"></span>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   <form class="navbar-form navbar-left">
+            <input type="text" class="form-control header-search-input js-site-search-focus " data-hotkey="s" name="q" value="" placeholder="Search LaotieHub" aria-label="Search LaotieHub" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off">
+          </form>
+                    <li><a href="skill/">技能</a></li>
+                    <li><a href="skill/">本周解锁</a></li>
+                    <li><a href="#">当铺</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <ol class="nav navbar-nav">
+
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户<span class="caret"></span>
                         </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="user/">会员面板</a></li>
-                                        <li><a href="#">解锁清单</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li class="dropdown-header">其他选项</li>
-                                        <li><a href="login.html">登录</a></li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
+                            <ul class="dropdown-menu">
+                                <li><a href="user/">我的内堂</a></li>
+                                <li><a href="skill/">收藏簿</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">其他选项</li>
+                                <li><a href="login.html">退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
-            </nav>
-
+            </div>
         </div>
-    </div>
+    </nav>
+
+
 
     <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -69,32 +70,33 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/logo/signed_logo.png" alt="First slide">
-
-                </div>
-                <div class="item">
-                    <img src="images/logo/unsigned_logo.png" alt="Second slide">
+                    <img src="images/logo/unsigned_logo.png" alt="First slide">
                     <div class="carousel-caption">
-                        <h1>关于我们</h1>
-                        <p>这是一个来自 <code>BIT</code> 的团队，我们致力于让技能在人与人之间流动起来。</p>
+                       <div class="input-group">
+    <input type="text" class="form-control input-lg" placeholder="开始"><span class="input-group-addon btn btn-primary">探索</span>
+</div>
+                        <p class="carousel-intro">这是一个来自 <code>BIT</code> 的团队，我们致力于让技能在人与人之间流动起来。</p>
                         <p><a class="button button-glow button-raised button-rounded button-primary" href="login.html" role="button">观看短片 <i class="fa fa-angle-double-right"></i></a></p>
                     </div>
                 </div>
-                <a class="carousel-control left" href="#mainCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control right" href="#mainCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                </a>
+                <div class="item">
+                    <img src="images/logo/%E7%AD%BE%E5%90%8D_logo.png" alt="Second slide">
+
+                </div>
+
             </div>
         </div>
     </div>
     <div id="show-main-intro">
-        
-        <a class="button button-3d button-caution button-pill" data-toggle="collapse" data-target="#main-intro" aria-expanded="false"
-                            aria-controls="navbar"><i class="fa fa-angle-double-down fa-1x"></i>
-          </a>
 
+        <a class="button button-royal button-border button-3d" data-toggle="collapse" data-target="#main-intro" aria-expanded="false" aria-controls="navbar">简介
+          </a>
+        <a class="button button-primary button-border button-3d" data-toggle="collapse" data-target="#main-intro" aria-expanded="false" aria-controls="navbar">热门
+          </a>
+          <a class="button button-royal button-border button-3d" data-toggle="collapse" data-target="#main-intro" aria-expanded="false" aria-controls="navbar">秘籍
+          </a>
+          <a class="button button-royal button-border button-3d" data-toggle="collapse" data-target="#main-intro" aria-expanded="false" aria-controls="navbar">全部
+          </a>
     </div>
     <!-- main intro -->
     <div id="main-intro" class="container-fluid intro-background collapse">
@@ -107,7 +109,7 @@
         </div>
     </div>
     <!-- skill card -->
-    <div class="container up-blank">
+    <div id="main-skill-list" class="container">
         <div class="row masonry">
             <div class="col-sm-4 col-md-3 col-xs-6 item">
                 <div class="thumbnail">
@@ -115,11 +117,11 @@
                         <a href="images/logo/signed_logo_broad.png"><img class="thumbnail-image" id="debug-thm" src="images/logo/signed_logo_broad.png"></a>
                     </div>
                     <div class="caption">
-                        <h3>佬铁会</h3>
-                        <p>一个自由的技能共享平台</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
+                        <p class="title">佬铁会</p>
+                        <p class="descrip">一个自由的技能共享平台</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>&nbsp;
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -130,86 +132,11 @@
                         <a href="photo/master/20170729/IMG_20170510_114644.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/IMG_20170510_114644.jpg"></a>
                     </div>
                     <div class="caption">
-                        <h3>海报制作</h3>
-                        <p>利用Photoshop轻松制作有设计感的海报</p>
-                        <p>
+                        <p class="title">海报制作</p>
+                        <p class="descrip">利用Photoshop轻松制作有设计感的海报</p>
+                        <p class="option-bar">
                             <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6 item">
-                <div class="thumbnail">
-                    <div class="thumbnail-div">
-                        <a href="images/START%20NOW.jpg"><img class="thumbnail-image" src="images/START%20NOW.jpg"></a>
-                    </div>
-                    <div class="caption">
-                        <h3>铁铁日记</h3>
-                        <p>桃之夭夭，灼灼其华。</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6 item">
-                <div class="thumbnail">
-                    <div class="thumbnail-div">
-                        <a href="images/%E4%BD%AC-%E6%8E%A8%E9%80%81.jpg"><img class="thumbnail-image" src="images/%E4%BD%AC-%E6%8E%A8%E9%80%81.jpg"></a>
-                    </div>
-                    <div class="caption">
-                        <h3>LOGO</h3>
-                        <p>LOGO设计</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6 item">
-                <div class="thumbnail">
-                    <div class="thumbnail-div">
-                        <a href="photo/master/20170729/img-086fa14e7cf24bc250b7186cf06d0911.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/img-086fa14e7cf24bc250b7186cf06d0911.jpg"></a>
-                    </div>
-                    <div class="caption">
-                        <h3>Crossdress</h3>
-                        <p>程序员的cosplay亚文化</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6 item">
-                <div class="thumbnail">
-                    <div class="thumbnail-div">
-                        <a href="images/%E9%93%81%E9%93%81%E6%97%A5%E8%AE%B0%20%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80.jpg"><img class="thumbnail-image" src="images/%E9%93%81%E9%93%81%E6%97%A5%E8%AE%B0%20%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80.jpg"></a>
-                    </div>
-                    <div class="caption">
-                        <h3>王者荣耀</h3>
-                        <p>王者学霸带飞</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6 item">
-                <div class="thumbnail">
-                    <div class="thumbnail-div">
-                        <a href="photo/master/20170729/img-f9b9bb770096492348cc514050a9041b.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/img-f9b9bb770096492348cc514050a9041b.jpg"></a>
-                    </div>
-                    <div class="caption">
-                        <h3>WLOP板绘</h3>
-                        <p>美哭了！</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -220,11 +147,101 @@
                         <a href="photo/master/20170729/img-160342706af9d524829db6d265e2a96e.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/img-160342706af9d524829db6d265e2a96e.jpg"></a>
                     </div>
                     <div class="caption">
-                        <h3>PC游戏开发</h3>
-                        <p>和陈星汉一起走进游戏开发的世界</p>
-                        <p>
+                        <p class="title">PC游戏开发</p>
+                        <p class="descrip">和陈星汉一起走进游戏开发的世界</p>
+                        <p class="option-bar">
                             <a href="#" class="btn btn-primary" role="button">入会</a>
-                            <a href="#" class="btn btn-default" role="button">收藏</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6 item">
+                <div class="thumbnail">
+                    <div class="thumbnail-div">
+                        <a href="photo/master/20170729/IMG_3622.JPG"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/IMG_3622.JPG"></a>
+                    </div>
+                    <div class="caption">
+                        <p class="title">跑酷</p>
+                        <p class="descrip">在城市中飞行</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6 item">
+                <div class="thumbnail">
+                    <div class="thumbnail-div">
+                        <a href="photo/master/20170729/img-086fa14e7cf24bc250b7186cf06d0911.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/img-086fa14e7cf24bc250b7186cf06d0911.jpg"></a>
+                    </div>
+                    <div class="caption">
+                        <p class="title">女装</p>
+                        <p class="descrip">程序员的cosplay亚文化</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6 item">
+                <div class="thumbnail">
+                    <div class="thumbnail-div">
+                        <a href="images/%E9%93%81%E9%93%81%E6%97%A5%E8%AE%B0%20%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80.jpg"><img class="thumbnail-image" src="images/%E9%93%81%E9%93%81%E6%97%A5%E8%AE%B0%20%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80.jpg"></a>
+                    </div>
+                    <div class="caption">
+                        <p class="title">王者荣耀</p>
+                        <p class="descrip">王者学霸带飞</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6 item">
+                <div class="thumbnail">
+                    <div class="thumbnail-div">
+                        <a href="photo/master/20170729/img-f9b9bb770096492348cc514050a9041b.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/img-f9b9bb770096492348cc514050a9041b.jpg"></a>
+                    </div>
+                    <div class="caption">
+                        <p class="title">WLOP板绘</p>
+                        <p class="descrip">美哭了！</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6 item">
+                <div class="thumbnail">
+                    <div class="thumbnail-div">
+                        <a href="photo/master/20170729/IMG_3589.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/IMG_3589.jpg"></a>
+                    </div>
+                    <div class="caption">
+                        <p class="title">摄影</p>
+                        <p class="descrip">用光记录世界</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6 item">
+                <div class="thumbnail">
+                    <div class="thumbnail-div">
+                        <a href="photo/master/20170729/img-3ba35f7c4fd0bdb816c5cf0455353e7a.jpg"><img class="thumbnail-image" src="photo/master/20170729/thumbnail/img-3ba35f7c4fd0bdb816c5cf0455353e7a.jpg"></a>
+                    </div>
+                    <div class="caption">
+                        <p class="title">铁铁日记</p>
+                        <p class="descrip">桃之夭夭，灼灼其华。</p>
+                        <p class="option-bar">
+                            <a href="#" class="btn btn-primary" role="button">入会</a>
+                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -232,10 +249,8 @@
         </div>
     </div>
     <footer class="copyright-background">
-        <p>佬铁出品 侵权必究 ©2016 Beijing Bigiron Technology Co., Ltd. All rights reserved<br/>
-            Big Iron Product | 地址：良乡东路<br/
-            联系我们
-            ></p>
+        <p>©2016 Beijing Bigiron Technology Co., Ltd. All rights reserved<br/> Big Iron Product | 良乡东路
+            <br/ 联系我们></p>
     </footer>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -243,13 +258,13 @@
     <script src="https://cdn.bootcss.com/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>');
-        $('.masonry').imagesLoaded(function () {
+        $('.masonry').imagesLoaded(function() {
             $('.masonry').masonry({
                 itemSelector: '.item'
             });
         });
-        $(function () {
-            $(window).scroll(function () {
+        $(function() {
+            $(window).scroll(function() {
                 var scrollTop = $(this).scrollTop(); //滚动高度
                 if (scrollTop > 800) {
                     $("#main-navbar").removeClass("navbar-wrapper");
@@ -263,6 +278,7 @@
                 }
             });
         });
+
     </script>
 
 </body>

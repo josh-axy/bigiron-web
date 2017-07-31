@@ -2,33 +2,50 @@
 <html>
 
 <head>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>登录佬铁会</title>
-    <meta charset="utf-8">
     <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
     <link href="css/login.css" rel="stylesheet">
+
+
 </head>
 
 <body>
     <div class="container">
-        <form class="form-signin input-group">
-        <h2 class="form-signin-heading"><img id="return-index" src="images/icon/login_icon.png" alt="返回首页"></h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="邮箱" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
-        <div class="checkbox">
-          <label>
+        <form class="form-signin">
+            <a class="form-signin-heading" href="index.html"><img id="return-index" src="images/icon/login_icon.png" alt="返回首页"></a>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="邮箱" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+            <div class="checkbox">
+                <label>
             <input type="checkbox" value="remember-me"> 记住我
           </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" href="index.html">Sign in</button>
-      </form>
+            </div>
+            <input type="submit" value="Go" class="button button-pill button-primary">
+            <input  type="submit" value="入帮" onclick="javascript:location.href='index.html'" class="button button-pill">
+        </form>
     </div>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/logo/%E7%AD%BE%E5%90%8D.png" alt="First slide">
+        </div>
+    </div>
+<footer class="copyright-background">
+        <p>©2016 Beijing Bigiron Technology Co., Ltd. All rights reserved<br/>
+            Big Iron Product | 良乡东路<br/
+            联系我们
+            ></p>
+    </footer>
 </body>
+
 </html>
