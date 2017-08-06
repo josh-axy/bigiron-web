@@ -1,0 +1,1328 @@
+/******************************
+.nav-el.active anim
+******************************/
+@keyframes fx-el_topleft-active {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    transform: translate3d(5%, 5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@keyframes fx-el_topright-active {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    transform: translate3d(-5%, 5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@keyframes fx-el_btmleft-active {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    transform: translate3d(5%, -5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@keyframes fx-el_btmright-active {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    transform: translate3d(-5%, -5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-moz-keyframes fx-el_topleft-active {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -moz-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -moz-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -moz-transform: translate3d(5%, 5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-moz-keyframes fx-el_topright-active {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -moz-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -moz-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -moz-transform: translate3d(-5%, 5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-moz-keyframes fx-el_btmleft-active {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -moz-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -moz-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -moz-transform: translate3d(5%, -5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-moz-keyframes fx-el_btmright-active {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -moz-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -moz-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -moz-transform: translate3d(-5%, -5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-webkit-keyframes fx-el_topleft-active {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -webkit-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -webkit-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -webkit-transform: translate3d(5%, 5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-webkit-keyframes fx-el_topright-active {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -webkit-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -webkit-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5%, 5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-webkit-keyframes fx-el_btmleft-active {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -webkit-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -webkit-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -webkit-transform: translate3d(5%, -5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+@-webkit-keyframes fx-el_btmright-active {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+
+  33% {
+    -webkit-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  40% {
+    -webkit-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5%, -5%, 0) scale(20);
+    color: transparent;
+  }
+}
+
+#el-topleft.active {
+  animation: fx-el_topleft-active 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_topleft-active 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_topleft-active 1.6s 1 ease-in-out forwards;
+}
+
+#el-topright.active {
+  animation: fx-el_topright-active 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_topright-active 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_topright-active 1.6s 1 ease-in-out forwards;
+}
+
+#el-btmleft.active {
+  animation: fx-el_btmleft-active 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_btmleft-active 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_btmleft-active 1.6s 1 ease-in-out forwards;
+}
+
+#el-btmright.active {
+  animation: fx-el_btmright-active 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_btmright-active 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_btmright-active 1.6s 1 ease-in-out forwards;
+}
+
+/******************************
+.nav-el.inactive anim
+******************************/
+@keyframes fx-el_topleft-inactive {
+  0% {
+    transform: translate(0%, 0%);
+    color: #FFF;
+  }
+
+  33% {
+    transform: translate(5.3%, 5.3%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate(5.3%, 5.3%);
+    color: #3498db;
+  }
+}
+
+@keyframes fx-el_topright-inactive {
+  0% {
+    transform: translate(0%, 0%);
+    color: #FFF;
+  }
+
+  33% {
+    transform: translate(-5.3%, 5.3%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate(-5.3%, 5.3%);
+    color: #3498db;
+  }
+}
+
+@keyframes fx-el_btmleft-inactive {
+  0% {
+    transform: translate(0%, 0%);
+    color: #FFF;
+  }
+
+  33% {
+    transform: translate(5.3%, -5.3%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate(5.3%, -5.3%);
+    color: #3498db;
+  }
+}
+
+@keyframes fx-el_btmright-inactive {
+  0% {
+    transform: translate(0%, 0%);
+    color: #FFF;
+  }
+
+  33% {
+    transform: translate(-5.3%, -5.3%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate(-5.3%, -5.3%);
+    color: #3498db;
+  }
+}
+
+@-moz-keyframes fx-el_topleft-inactive {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -moz-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-moz-keyframes fx-el_topright-inactive {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -moz-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-moz-keyframes fx-el_btmleft-inactive {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -moz-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-moz-keyframes fx-el_btmright-inactive {
+  0% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -moz-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-webkit-keyframes fx-el_topleft-inactive {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -webkit-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-webkit-keyframes fx-el_topright-inactive {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -webkit-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-webkit-keyframes fx-el_btmleft-inactive {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -webkit-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+}
+
+@-webkit-keyframes fx-el_btmright-inactive {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+
+  33% {
+    -webkit-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+}
+
+#el-topleft.inactive {
+  animation: fx-el_topleft-inactive 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_topleft-inactive 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_topleft-inactive 1.6s 1 ease-in-out forwards;
+}
+
+#el-topright.inactive {
+  animation: fx-el_topright-inactive 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_topright-inactive 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_topright-inactive 1.6s 1 ease-in-out forwards;
+}
+
+#el-btmleft.inactive {
+  animation: fx-el_btmleft-inactive 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_btmleft-inactive 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_btmleft-inactive 1.6s 1 ease-in-out forwards;
+}
+
+#el-btmright.inactive {
+  animation: fx-el_btmright-inactive 1.6s 1 ease-in-out forwards;
+  -moz-animation: fx-el_btmright-inactive 1.6s 1 ease-in-out forwards;
+  -webkit-animation: fx-el_btmright-inactive 1.6s 1 ease-in-out forwards;
+}
+
+/******************************
+.nav-el.active reverse
+******************************/
+@keyframes fx-el_topleft-active_reverse {
+  0% {
+    transform: translate3d(5%, 5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@keyframes fx-el_topright-active_reverse {
+  0% {
+    transform: translate3d(-5%, 5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@keyframes fx-el_btmleft-active_reverse {
+  0% {
+    transform: translate3d(5%, -5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@keyframes fx-el_btmright-active_reverse {
+  0% {
+    transform: translate3d(-5%, -5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-moz-keyframes fx-el_topleft-active_reverse {
+  0% {
+    -moz-transform: translate3d(5%, 5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -moz-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -moz-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-moz-keyframes fx-el_topright-active_reverse {
+  0% {
+    -moz-transform: translate3d(-5%, 5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -moz-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -moz-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-moz-keyframes fx-el_btmleft-active_reverse {
+  0% {
+    -moz-transform: translate3d(5%, -5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -moz-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -moz-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-moz-keyframes fx-el_btmright-active_reverse {
+  0% {
+    -moz-transform: translate3d(-5%, -5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -moz-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -moz-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes fx-el_topleft-active_reverse {
+  0% {
+    -webkit-transform: translate3d(5%, 5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -webkit-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -webkit-transform: translate3d(5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes fx-el_topright-active_reverse {
+  0% {
+    -webkit-transform: translate3d(-5%, 5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -webkit-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -webkit-transform: translate3d(-5%, 5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes fx-el_btmleft-active_reverse {
+  0% {
+    -webkit-transform: translate3d(5%, -5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -webkit-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -webkit-transform: translate3d(5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes fx-el_btmright-active_reverse {
+  0% {
+    -webkit-transform: translate3d(-5%, -5%, 0) scale(20);
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  50% {
+    color: transparent;
+    background-color: #20638f;
+  }
+
+  60% {
+    -webkit-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  67% {
+    -webkit-transform: translate3d(-5%, -5%, 0) scale(1);
+    color: #FFF;
+  }
+
+  82% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+}
+
+#el-topleft.active_reverse {
+  animation: fx-el_topleft-active_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_topleft-active_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_topleft-active_reverse 1.6s 1 ease-in-out;
+}
+
+#el-topright.active_reverse {
+  animation: fx-el_topright-active_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_topright-active_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_topright-active_reverse 1.6s 1 ease-in-out;
+}
+
+#el-btmleft.active_reverse {
+  animation: fx-el_btmleft-active_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_btmleft-active_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_btmleft-active_reverse 1.6s 1 ease-in-out;
+}
+
+#el-btmright.active_reverse {
+  animation: fx-el_btmright-active_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_btmright-active_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_btmright-active_reverse 1.6s 1 ease-in-out;
+}
+
+/*********************************************************
+.nav-el.inactive reverse
+**********************************************************
+Top prevent a bug on IE10 (the button jumps during anim),
+use translate instead of translate3d for the first move.
+*********************************************************/
+@keyframes fx-el_topleft-inactive_reverse {
+  0% {
+    transform: translate(5.5%, 5.5%);
+    color: #3498db;
+  }
+
+  67% {
+    transform: translate(5.5%, 5.5%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #FFF;
+  }
+}
+
+@keyframes fx-el_topright-inactive_reverse {
+  0% {
+    transform: translate(-5.5%, 5.5%);
+    color: #3498db;
+  }
+
+  67% {
+    transform: translate(-5.5%, 5.5%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #FFF;
+  }
+}
+
+@keyframes fx-el_btmleft-inactive_reverse {
+  0% {
+    transform: translate(5.5%, -5.5%);
+    color: #3498db;
+  }
+
+  67% {
+    transform: translate(5.5%, -5.5%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #FFF;
+  }
+}
+
+@keyframes fx-el_btmright-inactive_reverse {
+  0% {
+    transform: translate(-5.5%, -5.5%);
+    color: #3498db;
+  }
+
+  67% {
+    transform: translate(-5.5%, -5.5%);
+    color: #3498db;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes fx-el_topleft-inactive_reverse {
+  0% {
+    -moz-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -moz-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes fx-el_topright-inactive_reverse {
+  0% {
+    -moz-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -moz-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes fx-el_btmleft-inactive_reverse {
+  0% {
+    -moz-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -moz-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes fx-el_btmright-inactive_reverse {
+  0% {
+    -moz-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -moz-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -moz-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes fx-el_topleft-inactive_reverse {
+  0% {
+    -webkit-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -webkit-transform: translate3d(5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes fx-el_topright-inactive_reverse {
+  0% {
+    -webkit-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -webkit-transform: translate3d(-5.3%, 5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes fx-el_btmleft-inactive_reverse {
+  0% {
+    -webkit-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -webkit-transform: translate3d(5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes fx-el_btmright-inactive_reverse {
+  0% {
+    -webkit-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  67% {
+    -webkit-transform: translate3d(-5.3%, -5.3%, 0);
+    color: #3498db;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    color: #FFF;
+  }
+}
+
+#el-topleft.inactive_reverse {
+  animation: fx-el_topleft-inactive_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_topleft-inactive_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_topleft-inactive_reverse 1.6s 1 ease-in-out;
+}
+
+#el-topright.inactive_reverse {
+  animation: fx-el_topright-inactive_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_topright-inactive_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_topright-inactive_reverse 1.6s 1 ease-in-out;
+}
+
+#el-btmleft.inactive_reverse {
+  animation: fx-el_btmleft-inactive_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_btmleft-inactive_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_btmleft-inactive_reverse 1.6s 1 ease-in-out;
+}
+
+#el-btmright.inactive_reverse {
+  animation: fx-el_btmright-inactive_reverse 1.6s 1 ease-in-out;
+  -moz-animation: fx-el_btmright-inactive_reverse 1.6s 1 ease-in-out;
+  -webkit-animation: fx-el_btmright-inactive_reverse 1.6s 1 ease-in-out;
+}
+
+/******************************
+.overlay anim
+******************************/
+@keyframes fx-overlay {
+  0% {
+    visibility: visible;
+    color: transparent;
+  }
+
+  50% {
+    background-color: #20638f;
+    color: white;
+  }
+
+  100% {
+    visibility: visible;
+    background-color: #20638f;
+    color: #FFF;
+  }
+}
+
+@keyframes fx-overlay-reverse {
+  0% {
+    visibility: visible;
+    background-color: #20638f;
+    color: #FFF;
+  }
+
+  40% {
+    background-color: #20638f;
+    color: transparent;
+  }
+
+  85% {
+    background-color: transparent;
+  }
+
+  100% {
+    visibility: invisible;
+    color: transparent;
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes fx-overlay {
+  0% {
+    visibility: visible;
+    color: transparent;
+  }
+
+  50% {
+    background-color: #20638f;
+    color: white;
+  }
+
+  100% {
+    visibility: visible;
+    background-color: #20638f;
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes fx-overlay-reverse {
+  0% {
+    visibility: visible;
+    background-color: #20638f;
+    color: #FFF;
+  }
+
+  40% {
+    background-color: #20638f;
+    color: transparent;
+  }
+
+  85% {
+    background-color: transparent;
+  }
+
+  100% {
+    visibility: invisible;
+    color: transparent;
+    background-color: transparent;
+  }
+}
+
+@-moz-keyframes fx-overlay {
+  0% {
+    visibility: visible;
+    color: transparent;
+  }
+
+  50% {
+    background-color: #20638f;
+    color: white;
+  }
+
+  100% {
+    visibility: visible;
+    background-color: #20638f;
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes fx-overlay-reverse {
+  0% {
+    visibility: visible;
+    background-color: #20638f;
+    color: #FFF;
+  }
+
+  40% {
+    background-color: #20638f;
+    color: transparent;
+  }
+
+  85% {
+    background-color: transparent;
+  }
+
+  100% {
+    visibility: invisible;
+    color: transparent;
+    background-color: transparent;
+  }
+}
+
+.overlay.active {
+  animation: fx-overlay .8s 1.25s 1 ease-in-out forwards;
+  -webkit-animation: fx-overlay .8s 1.25s 1 ease-in-out forwards;
+  -moz-animation: fx-overlay .8s 1.25s 1 ease-in-out forwards;
+}
+
+.overlay.active_reverse {
+  animation: fx-overlay-reverse .8s 1 ease-in backwards;
+  -webkit-animation: fx-overlay-reverse .8s 1 ease-in backwards;
+  -moz-animation: fx-overlay-reverse .8s 1 ease-in backwards;
+}
