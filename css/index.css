@@ -1,53 +1,48 @@
 /*Global Customize*/
+@font-face {
+  font-family: 'Ajiwai';
+  src: url('../fonts/Ajiwai.ttf') format('truetype'),
+      url('../fonts/Base 02.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     padding-bottom: 40px;
-    font-family: 'Microsoft YaHei thin',sans-serif;
+    font-family: 'Microsoft YaHei thin', sans-serif;
     background-color: #fff;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Microsoft Yahei'
+    font-family: 'Microsoft Yahei', sans-serif;
 }
 
 .navbar-inverse {
     background: #24292e;
-    font-family: 'Microsoft YaHei UI bold','Microsoft YaHei',sans-serif;
+    font-family: 'Microsoft YaHei UI bold', 'Microsoft YaHei', sans-serif;
+    border-color: transparent;
+    margin: 0!important;
 }
 
-#navbar a{
+#navbar a {
     transition: color 0.5s ease-in-out;
 }
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 500px;
-
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
+.fontsdebug{
+    font-family: "Ajiwai","Microsoft YaHei UI","sans-serif";
 }
 
-.carousel-inner > .item > img {
-    height: 500px;
-    width: auto;
-    min-width: 100%;
-}
-
-  #myCarousel {
-  margin-top: 3.6em;
-}
-/* Customize setting
+/* 导航栏样式
 --------------------------------------------------*/
-.header-search-input{
-    background-color: rgb(63,67,71);
+
+.header-search-input {
+    background-color: rgb(63, 67, 71);
     border-color: transparent;
     width: 200px!important;
+    font-weight: normal;
 }
+
 .navbar-brand {
     margin: -8px -5px 5px 5px;
 }
@@ -55,137 +50,301 @@ h3 {
 .navbar-right {
     padding-right: 30px;
 }
-.navbar-content{
-    padding: 0px 50px;
-    margin-top: 5px;
+
+nav {
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
 }
-.up-blank {
-    margin-top: 20px;
+#nav-notifier{
+    font-size: 20px;
+    color: #888!important;
+    margin-top: 0;
+}
+.avatar-small {
+    margin: 0 0 -10px;
+    position: relative;
+    bottom: 4px;
+    overflow: hidden;
+}
+
+.dropdown-header {
+    font-weight: normal;
+}
+
+
+/*轮播区
+---------------------------------*/
+
+.input-lg {
+    background: rgba(255, 255, 255, 0.6)!important;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+    width: auto;
+    height: 500px;
+    background: #555;
+    color: white;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.cover {
+    width: auto;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#cover-chooser {
+    margin: 0 auto 10px;
+    width: 30%;
+    text-align: center;
+    position: static;
+    border-color: black;
+    border: 2px;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 5px;
+}
+
+
+/*分类
+---------------------------------------*/
+
+.top-content-box {
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+    padding: 10px 0 23px;
+}
+
+.intro-background {
+    background-color: #DDD;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+}
+
+.intro {
+    text-align: center;
+    color: #F0F0F0!important;
+    line-height: 2em;
+    font-size: 1.4em;
+}
+
+#show-main-intro {
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: justify;
+    width: 30%;
+}
+
+/*主内容区
+-------------------------------*/
+
+.main-content-box {
+    margin-top: 10px;
     padding-top: 10px;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
- 	background-blend-mode: normal, multiply;
+    background-image: linear-gradient(to top, #fff 0%, #f8fafc 100%);
+    background-blend-mode: normal, multiply;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #ff743e;
+    background-color: rgb(248, 250, 252);
     border-radius: 5px;
-    box-shadow: 0px 0px 8px #EEE;
 }
-.nav{
-    font-size: 15px;
-    font-weight:lighter;
-}
-.input-lg{
-    background:rgba(255, 255, 255, 0.6)!important;
 
-}
-.input-group{
-    margin-bottom: 20px;
-}
-.thumbnail-image {
-    border-radius: 0px;
-    height: auto;
-    border-style:solid;
-
-}
-.thumbnail-div{
-    width: 103%;
-    margin: -4px 0px 0px -4px;
-}
-#index-gallery{
-    margin-top: -1.4em;
-}
-  .intro-background{
-    background-color: #DDD;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
-}
-  .intro{
-    text-align: center;
-    color: #F0F0F0!important;
-
-    line-height: 2em;
-    font-size: 1.4em;
-  }
-
-  #show-main-intro{
-    margin:20px auto; 30px;
-      text-align: justify;
-      text-align-last: justify;
-      width: 30%;
-  }
-
-.button-circle{
-    box-shadow: 0px 0px 8px #ddd;
+.button-circle {
+    box-shadow: 0 0 8px #eed;
     text-align: center;
     text-align-last: center;
 }
-.option-bar{
-    text-align: justify;
-    text-align-last: justify;
-}
+
+.option-bar {
+    text-align: right;}
+
 .thumbnail{
-    border-radius: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.05);
+    border:0;
+    transition: .3s all linear;
 }
-.caption{
+.thumbnail .caption .title{
+    transition: .3s all linear;
+}
+.thumbnail-image {
+    border-radius: 0;
+    height: auto;
+    border-style: solid;
+}
+
+.thumbnail:hover{
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, .1)
+}
+
+.thumbnail:hover .caption .title{
+    color: rgb(234,174,07)!important;
+}
+
+.thumbnail-div {
+    width: 104%;
+    margin: -4px 0px 0px -4px;
+    box-shadow: 1px 0px 7px #ddd;
+}
+
+.caption {
     color: #aab!important;
 }
-.title{
-    color: #000;
-    font-family: 'Microsoft YaHei UI bold','Microsoft YaHei',sans-serif;
+.descrip {
+    font-size: 10px;
+}
+.title {
+    color: rgb(7,17,27);
+    font-family: "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
     font-size: 16px;
 }
-  .copyright-background{
-    font-family: 'Microsoft YaHei UI bold','Microsoft YaHei',sans-serif;
+
+.copyright-background {
+    font-family: 'Microsoft YaHei UI bold', 'Microsoft YaHei', sans-serif;
     text-align: center;
-    color: #555;
-    text-shadow: 1px 1px 1px #ddd;
+    color: #888;
     margin: 1em 0em -10em;
     line-height: 2em;
-  }
+    display: none;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+@media(min-width:1920px) {
+    .cover {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 }
 
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+@media(max-width:1600px) {
+    #show-main-intro {
+        width: 40%;
+        line-height: 60px;
+    }
 }
 
-@media(max-width:1200px){
-  .thumbnail-div{
-    width: 105.6%!important;
+@media(max-width:1200px) {
+    #show-main-intro {
+        width: 70%;
+        line-height: 60px;
+    }
 }
+
+@media (min-width: 769px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .swiper-slide,
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    .navbar-content {
+        padding: 2px 0px 0px 50px;
+    }
+    .carousel-caption .input-group {
+        display: none!important;
+    }
+    .mobile-cover {
+        display: none!important;
+    }
+}
+
+@media(max-width:768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none!important;
+    }
+    #show-main-intro {
+        width: 70%;
+        line-height: 60px;
+    }
+    .desktop-cover {
+        display: none!important;
+    }
+    .cover {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .navbar-form{
+        display: none!important;
+    }
+}
+
+@media(max-width:450px) {
+    .thumbnail-div {
+        width: 105%!important;
+    }
+    .swiper-container {
+        height: 400px;
+    }
+}
+
+@media(max-width:375px) {
+    .thumbnail-div {
+        width: 106.8%!important;
+    }
+    #show-main-intro {
+        width: 80%;
+        line-height: 60px;
+    }
+}
+
+@media(max-width:339px) {
+        .cover {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
 }

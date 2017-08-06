@@ -97,13 +97,21 @@
 *
 * The default values for the .button class
 */
+@font-face {
+  font-family: 'Ajiwai';
+  src: url('../fonts/Ajiwai.TTF') format('truetype'),
+      url('../fonts/Base 02.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .button {
   color: #666;
   background-color: #EEE;
   border-color: #EEE;
   font-weight: 300;
   font-size: 16px;
-  font-family: "Microsoft YaHei UI","Microsoft YaHei","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:"Microsoft YaHei UI","Microsoft YaHei","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-decoration: none;
   text-align: center;
   line-height: 40px;

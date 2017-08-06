@@ -1,14 +1,17 @@
 body {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
-    background-blend-mode: multiply, multiply;
+    background-image: url('../images/bg/login_bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #fa9a29;
+    background-color: #da7a09;
     text-align: center;
     font-family: 'Microsoft YaHei', sans-serif;
 }
+html, body {
+        position: relative;
+        height: 100%;
+    }
 #return-index {
     margin-top: 150px;
     width: 250px;
@@ -54,10 +57,15 @@ body {
   border-top-right-radius: 0;
 }
 
-@media (min-width:900px) {
+@media (min-width:768px) {
     .carousel-inner {
-        margin: -200px 0px 0px;
+        margin: -400px 0px 0px -100px;
         position: relative;
         z-index: -1;
+    }
+}
+@media (max-width:768px){
+    .copyright-background p{
+        font-size: 10px!important;
     }
 }
