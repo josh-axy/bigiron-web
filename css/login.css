@@ -46,7 +46,7 @@ html, body {
 .form-signin .form-control:focus {
   z-index: 2;
 }
-.form-signin input[type="email"] {
+.form-signin input[type="email"], .form-signin input[type="tel"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -56,7 +56,9 @@ html, body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
+#confirmPassword{
+    display:none;
+}
 @media (min-width:768px) {
     .carousel-inner {
         margin: -400px 0px 0px -100px;
