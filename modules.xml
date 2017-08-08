@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BigIron_Git.iml" filepath="$PROJECT_DIR$/.idea/BigIron_Git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sample.iml" filepath="$PROJECT_DIR$/.idea/sample.iml" />
     </modules>
   </component>
 </project>
