@@ -8,8 +8,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="images/icon/site_logo_small.ico" rel="shortcut icon">
     <title>登录佬铁会</title>
-    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/buttons.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/login.css" rel="stylesheet">
@@ -19,21 +21,28 @@
 
 <body>
 <div class="container">
-    <form class="form-signin" method="post">
-        <a class="form-signin-heading" href="index.html"><img id="return-index" src="images/icon/login_icon.png"
-                                                              alt="返回首页"></a>
-        <label for="inputTel" class="sr-only">Email address</label>
-        <input type="tel" id="inputTel" class="form-control" name="inputTel" placeholder="手机" autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" name="inputPw" placeholder="密码">
-        <input type="password" id="confirmPassword" class="form-control" name="confPw" placeholder="确认密码">
+    <a class="form-signin-heading" href="index.html"><img id="return-index" src="images/icon/login_icon.png" alt="返回首页"></a>
+    <form class="form-signin" method="post" action="valid.php">
+        <label for="inputTel" class="sr-only">Tel Number</label>
+        <input type="tel" id="inputTel" class="form-control" name="tel" placeholder="手机" autofocus>
+        <label for="inputPw" class="sr-only">Password</label>
+        <input type="password" id="inputPw" class="form-control" name="password" placeholder="密码">
         <div class="checkbox">
             <label>
                 <input type="checkbox" value="remember-me" name="remember"> 记住我
             </label>
         </div>
-        <input type="submit" value="Go" class="button button-pill button-primary">
-        <input type="submit" value="入帮" id="signUp" class="button button-pill">
+        <input type="submit" value="入帮" class="button button-pill button-primary">
+        <input type="button" value="注册" id="to-signup" class="button button-pill">
+    </form>
+    <form class="form-signup sr-only" method="post" action="regist.php">
+        <label for="signTel" class="sr-only">Tel Number</label>
+        <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" autofocus><span id="tel-err"></span>
+        <label for="signPw" class="sr-only">Password</label><span id="pw-err"></span>
+        <input type="password" id="signPw" class="form-control" name="password" placeholder="填写密码"><span id="confirm-err"></span>
+        <input type="password" id="confirmPw" class="form-control" name="confirm" placeholder="确认密码">
+        <input type="submit" value="注册" class="button button-pill button-primary"><br>
+        <a href="#"id="to-login">已有账号</a>
     </form>
 </div>
 
@@ -48,13 +57,17 @@
         联系我们
     </p>
 </footer>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
 <script>
-    var regisButton=document.getElementById("signUp");
-    regisButton.onclick=handleRegister;
-    function handleRegister() {
-        var confirm=document.getElementById("confirmPassword");
-        confirm.css('display','block');
-    }
+    $('#to-signup').click(function () {
+        $('.form-signin').addClass("sr-only");
+        $('.form-signup').removeClass("sr-only");
+    });
+    $('#to-login').click(function () {
+        $('.form-signup').addClass("sr-only");
+        $('.form-signin').removeClass("sr-only");
+    });
 </script>
 </body>
 
