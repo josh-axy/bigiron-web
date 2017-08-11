@@ -1,98 +1,135 @@
 body {
-    background-image: url('../images/bg/login_bg.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #da7a09;
+    background: #da7a09
+                url('../images/bg/login_bg.jpg')
+                no-repeat
+                fixed
+                center center / cover;
     text-align: center;
     font-family: 'Microsoft YaHei', sans-serif;
 }
+
 html, body {
-        position: relative;
-        height: 100%;
-    }
+    position: relative;
+    height: 100%;
+}
+
 #return-index {
     margin-top: 150px;
     width: 250px;
     height: auto;
 }
 
-.button {
+.button-3d {
     margin: 5px 10px;
     padding: 0 35px;
+    font-family: "Microsoft YaHei UI Light", "Microsoft YaHei", sans-serif!important;
+    color: #eaeaea;
 }
-p.describe{
-    margin: -5px 0 -10px;
-    color: #222;
-    font-size: 10px;
+
+.notify {
+    margin: 15px 0 !important;
+    color: #111;
+    font-family: "Microsoft YaHei UI Light", "Microsoft YaHei", sans-serif!important;
 }
+
+#nickname{
+    font-family: "Microsoft YaHei", sans-serif!important;
+    font-weight: bold;
+    color: #FFF;
+}
+
 .form-signin,
 .form-signup {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
+
 .form-signin-heading,
 .form-signin .checkbox,
 .form-signup .checkbox {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+p.optional{
+    margin: 10px 0 5px;
+    font-weight: bold;
 }
 .form-signup .checkbox,
 .form-signin .checkbox {
-  font-weight: normal;
+    font-weight: normal;
 }
+
 .form-signin .form-control,
-.form-signup .form-control{
-  position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
+.form-signup .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
 }
+
 .form-signin .form-control:focus,
-.form-signup .form-control:focus{
-  z-index: 2;
+.form-signup .form-control:focus {
+    z-index: 2;
 }
-.form-signin input[type="email"], .form-signin input[type="tel"]{
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"]{
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.form-signup input[type="tel"]{
+
+#inputTel,#signTel {
     margin-bottom: -1px;
-    -webkit-border-radius:5px 5px 0 0;
-    -moz-border-radius:5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
-.form-signup input[type="password"]{
-    margin-bottom: -1px;
-    -webkit-border-radius: 0;    
-    -moz-border-radius: 0;    
-    border-radius: 0;
-}
-.form-signup #confirmPw{
+
+#inputPw {
     margin-bottom: 10px;
-    -webkit-border-radius: 0 0 5px 5px;    
-    -moz-border-radius: 0 0 5px 5px;    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#signPw,
+#signNickname{
+    margin-bottom: -1px!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+}
+.form-signup label{
+    font-weight: normal!important;
+}
+#confirmPw {
+    margin-bottom: 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
 }
-@media (min-width:768px) {
+
+#to-login {
+    color: #444 !important;
+    display: block;
+    margin: 5px 0;
+    font-size: 14px !important;
+}
+
+@media (min-width: 1600px) {
     .carousel-inner {
-        margin: -400px 0px 0px -100px;
+        margin: -400px 0px 0px -100px!important;
+        position: relative;
+        z-index: -1;
+    }
+    .success-pic {
+        margin-top: -300px !important;
+    }
+}
+@media (min-width: 1000px) {
+    .carousel-inner {
+        margin: -200px 0px 0px -100px;
         position: relative;
         z-index: -1;
     }
 }
-@media (max-width:768px){
-    .copyright-background p{
-        font-size: 10px!important;
+@media (max-width: 768px) {
+    .copyright-background p {
+        font-size: 10px !important;
     }
 }

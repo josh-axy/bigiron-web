@@ -11,10 +11,10 @@
     <link href="images/icon/site_logo_small.ico" rel="shortcut icon">
     <title>登录佬铁会</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.bootcss.com/Buttons/2.0.0/css/buttons.min.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/login.css?v=103" rel="stylesheet">
 
 
 </head>
@@ -37,10 +37,17 @@
     </form>
     <form class="form-signup sr-only" method="post" action="regist.php">
         <label for="signTel" class="sr-only">Tel Number</label>
-        <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" autofocus><span id="tel-err"></span>
-        <label for="signPw" class="sr-only">Password</label><span id="pw-err"></span>
-        <input type="password" id="signPw" class="form-control" name="password" placeholder="填写密码"><span id="confirm-err"></span>
-        <input type="password" id="confirmPw" class="form-control" name="confirm" placeholder="确认密码">
+        <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" autofocus required><span id="tel-err"></span>
+        <input id="signNickname" class="form-control" name="nickname" placeholder="昵称" required><span id="nickname-err"></span>
+        <label for="signPw" class="sr-only">Password</label>
+        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err"></span>
+        <input type="password" id="confirmPw" autocomplete="off" class="form-control" name="confirm" placeholder="确认密码" required><span id="confirm-err"></span>
+        <p class="optional">- 选填 -</p>
+        <input type="radio" id="signMale" name="sex" value="0"><label for="signMale">&nbsp爷们</label>
+        <input type="radio" id="signFemale" name="sex" value="1"><label for="signFemale">&nbsp姑娘 </label>
+        <input type="radio" id="noSex" name="sex" value="2"><label for="signFemale">&nbsp无 </label>
+        <input type="email" id="signMail" class="form-control" name="mail" placeholder="邮箱" autofocus><span id="mail-err"></span>
+        <br>
         <input type="submit" value="注册" class="button button-pill button-primary"><br>
         <a href="#"id="to-login">已有账号</a>
     </form>
