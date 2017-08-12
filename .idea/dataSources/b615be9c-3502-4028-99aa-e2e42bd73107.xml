@@ -11,73 +11,98 @@
     <schema id="5" parent="1" name="performance_schema"/>
     <schema id="6" parent="1" name="sys"/>
     <table id="7" parent="2" name="accounts"/>
-    <column id="8" parent="7" name="uid">
+    <table id="8" parent="2" name="skill_db"/>
+    <column id="9" parent="7" name="uid">
       <Position>1</Position>
       <DataType>int(10) unsigned|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="9" parent="7" name="nickname">
+    <column id="10" parent="7" name="nickname">
       <Position>2</Position>
-      <DataType>char(32)|0</DataType>
+      <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="10" parent="7" name="sex">
+    <column id="11" parent="7" name="sex">
       <Position>3</Position>
       <DataType>tinyint(2)|0</DataType>
       <DefaultExpression>&apos;2&apos;</DefaultExpression>
     </column>
-    <column id="11" parent="7" name="tel">
+    <column id="12" parent="7" name="tel">
       <Position>4</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12" parent="7" name="mail">
+    <column id="13" parent="7" name="mail">
       <Position>5</Position>
       <DataType>char(50)|0</DataType>
     </column>
-    <column id="13" parent="7" name="wechat_id">
+    <column id="14" parent="7" name="wechat_id">
       <Position>6</Position>
       <DataType>char(120)|0</DataType>
     </column>
-    <column id="14" parent="7" name="qq_id">
+    <column id="15" parent="7" name="qq_id">
       <Position>7</Position>
       <DataType>char(20)|0</DataType>
     </column>
-    <column id="15" parent="7" name="sina_id">
+    <column id="16" parent="7" name="sina_id">
       <Position>8</Position>
       <DataType>char(120)|0</DataType>
     </column>
-    <column id="16" parent="7" name="signup_time">
+    <column id="17" parent="7" name="signup_time">
       <Position>9</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="17" parent="7" name="wallet">
+    <column id="18" parent="7" name="wallet">
       <Position>10</Position>
       <DataType>int(10) unsigned|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="18" parent="7" name="school">
+    <column id="19" parent="7" name="school">
       <Position>11</Position>
       <DataType>char(120)|0</DataType>
     </column>
-    <column id="19" parent="7" name="pw">
+    <column id="20" parent="7" name="pw">
       <Position>12</Position>
       <DataType>char(64)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="20" parent="7" name="accounts_nickname_uindex">
+    <column id="21" parent="7" name="avatar_path">
+      <Position>13</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="7" name="thumbnail_path">
+      <Position>14</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="23" parent="7" name="accounts_nickname_uindex">
       <ColNames>nickname</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="21" parent="7" name="PRIMARY">
+    <key id="24" parent="7" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="22" parent="7" name="accounts_nickname_uindex">
+    <key id="25" parent="7" name="accounts_nickname_uindex">
       <ColNames>nickname</ColNames>
       <UnderlyingIndexName>accounts_nickname_uindex</UnderlyingIndexName>
     </key>
+    <column id="26" parent="8" name="sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="27" parent="8" name="skill_name">
+      <Position>2</Position>
+      <DataType>char(255)|0</DataType>
+    </column>
+    <column id="28" parent="8" name="owner">
+      <Position>3</Position>
+      <DataType>char(255)|0</DataType>
+    </column>
+    <column id="29" parent="8" name="asset_path">
+      <Position>4</Position>
+      <DataType>char(255)|0</DataType>
+    </column>
   </database-model>
 </dataSource>

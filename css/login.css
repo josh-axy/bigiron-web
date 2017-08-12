@@ -74,7 +74,11 @@ p.optional{
 .form-signup .form-control:focus {
     z-index: 2;
 }
-
+.err{
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+    transition: all .5s;
+}
 #inputTel,#signTel {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;

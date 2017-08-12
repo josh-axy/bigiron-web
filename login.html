@@ -14,7 +14,7 @@
     <link href="https://cdn.bootcss.com/Buttons/2.0.0/css/buttons.min.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/login.css?v=103" rel="stylesheet">
+    <link href="css/login.css?v=25" rel="stylesheet">
 
 
 </head>
@@ -22,11 +22,11 @@
 <body>
 <div class="container">
     <a class="form-signin-heading" href="index.html"><img id="return-index" src="images/icon/login_icon.png" alt="返回首页"></a>
-    <form class="form-signin" method="post" action="valid.php">
+    <form class="form-signin" method="post" action="user_authenticate.php">
         <label for="inputTel" class="sr-only">Tel Number</label>
-        <input type="tel" id="inputTel" class="form-control" name="tel" placeholder="手机" autofocus>
+        <input type="tel" id="inputTel" class="form-control" name="tel" placeholder="手机" required><span id="intel-err" class="err"></span>
         <label for="inputPw" class="sr-only">Password</label>
-        <input type="password" id="inputPw" class="form-control" name="password" placeholder="密码">
+        <input type="password" id="inputPw" class="form-control" name="password" placeholder="密码" required><span id="inpw-err" class="err"></span>
         <div class="checkbox">
             <label>
                 <input type="checkbox" value="remember-me" name="remember"> 记住我
@@ -37,19 +37,19 @@
     </form>
     <form class="form-signup sr-only" method="post" action="regist.php">
         <label for="signTel" class="sr-only">Tel Number</label>
-        <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" autofocus required><span id="tel-err"></span>
-        <input id="signNickname" class="form-control" name="nickname" placeholder="昵称" required><span id="nickname-err"></span>
+        <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" required><span id="tel-err" class="err"></span>
+        <input id="signNickname" class="form-control" name="nickname" placeholder="昵称" required><span id="nickname-err" class="err"></span>
         <label for="signPw" class="sr-only">Password</label>
-        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err"></span>
-        <input type="password" id="confirmPw" autocomplete="off" class="form-control" name="confirm" placeholder="确认密码" required><span id="confirm-err"></span>
+        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err" class="err"></span>
+        <input type="password" id="confirmPw" autocomplete="off" class="form-control" name="confirm" placeholder="确认密码" required><span id="confirm-err" class="err"></span>
         <p class="optional">- 选填 -</p>
-        <input type="radio" id="signMale" name="sex" value="0"><label for="signMale">&nbsp爷们</label>
+        你是：<input type="radio" id="signMale" name="sex" value="0"><label for="signMale">&nbsp爷们</label>
         <input type="radio" id="signFemale" name="sex" value="1"><label for="signFemale">&nbsp姑娘 </label>
-        <input type="radio" id="noSex" name="sex" value="2"><label for="signFemale">&nbsp无 </label>
-        <input type="email" id="signMail" class="form-control" name="mail" placeholder="邮箱" autofocus><span id="mail-err"></span>
+        <input type="radio" id="noSex" name="sex" value="2"><label for="signFemale">&nbsp本無 </label>
+        <input type="email" id="signMail" class="form-control" name="mail" placeholder="邮箱" autofocus><span id="mail-err" class="err"></span>
         <br>
-        <input type="submit" value="注册" class="button button-pill button-primary"><br>
-        <a href="#"id="to-login">已有账号</a>
+        <input type="submit" id="register" value="注册" class="button button-pill button-primary"><br>
+        <a href="#" id="to-login">已有账号</a>
     </form>
 </div>
 
@@ -65,7 +65,6 @@
     </p>
 </footer>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
 <script>
     $('#to-signup').click(function () {
         $('.form-signin').addClass("sr-only");
@@ -75,6 +74,93 @@
         $('.form-signup').addClass("sr-only");
         $('.form-signin').removeClass("sr-only");
     });
+    var submit_check=[0,0,0,0];
+    function isTel(s) {
+        var pattern=/^\d{11}$/;
+        return pattern.test(s);
+    }
+    function isPw(s) {
+        var main=/^[\x21-\x7e]+$/;
+        var ptrn=/[A-Z]/;
+        var ptrn2 = /[\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e]+/;
+        var lenp=/^\S{8,15}$/;
+        return (main.test(s) && (ptrn.test(s) || ptrn2.test(s)) && lenp.test(s));
+    }
+    function isNick(s) {
+        var pattern=/^(?!_)(?!\d)[\u2E80-\uFE4F\x21-\x7e\u00b7\u300e\u2014\u300f\uff01]{1,20}$/;
+        return pattern.test(s);
+    }
+    function judgeTel(tel,err) {
+        if(!isTel(tel.val())){
+            tel.css("border-color","red");
+            err.html('× 要输入有效的电话噢');
+            submit_check[0]=0;
+        }
+        else{
+            tel.css("border-color","rgb(204,204,204)");
+            err.html('');
+            submit_check[0]=1;
+        }
+    }
+    function judgeNick(nick, err) {
+        if(!isNick(nick.val())){
+            nick.css("border-color","red");
+            err.html('× 这个昵称太花哨啦');
+            submit_check[1]=0;
+        }
+        else {
+            nick.css("border-color","rgb(204,204,204)");
+            err.html('');
+            submit_check[1]=1;
+        }
+    }
+    function judgePw(Pw, err) {
+        if(!isPw(Pw.val())){
+            Pw.css("border-color","red");
+            err.html('× 使用8-15位密码，至少有大写字母或特殊符号');
+            submit_check[2]=0;
+        }
+        else{
+            Pw.css("border-color","rgb(204,204,204)");
+            err.html('');
+            submit_check[2]=1;
+        }
+    }
+    $(document).ready(function () {
+        var signTel= $('#signTel');
+        var signNick=$('#signNickname');
+        var signPw= $('#signPw');
+        var confirmPw= $('#confirmPw');
+        var submit=$('#register');
+        signTel.blur(function () {
+            judgeTel(signTel,$('#tel-err'));
+        });
+        signNick.blur(function () {
+            judgeNick(signNick,$('#nickname-err'))
+        })
+        signPw.blur(function () {
+            judgePw(signPw,$('#pw-err'));
+        });
+        confirmPw.blur(function () {
+            if(confirmPw.val()!==signPw.val()){
+                confirmPw.css("border-color","red");
+                $('#confirm-err').html('× 密码不一致!');
+                submit_check[3]=0;
+            }
+            else {
+                confirmPw.css("border-color","rgb(204,204,204)");
+                $('#confirm-err').html('');
+                submit_check[3]=1;
+            }
+        });
+        submit.click(function () {
+            for(var i in submit_check){
+                if ("0" === submit_check[i]) return false;
+            }
+            return true;
+        })
+    });
+
 </script>
 </body>
 

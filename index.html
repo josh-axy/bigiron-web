@@ -13,7 +13,7 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/swiper.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/index.css?v=105" rel="stylesheet">
 </head>
 
 <body>
@@ -28,13 +28,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a class="navbar-brand" href="#"><img width="40" height="40" src="images/icon/navbar_icon.png"></a>
+                <a class="navbar-brand" href="#"><img width="40px" height="40px" src="images/icon/navbar_icon.png"></a>
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <form class="navbar-form navbar-left">
-                        <input type="text" class="form-control header-search-input js-site-search-focus " data-hotkey="s" name="q" value="" placeholder="Search LaotieHub" aria-label="Search LaotieHub" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off">
+                        <input type="text" class="form-control header-search-input js-site-search-focus " data-hotkey="s" name="q" value="" placeholder="Search LaotieHub" aria-label="探索佬铁会" data-unscoped-placeholder="探索佬铁会" data-scoped-placeholder="Search">
                     </form>
                     <li><a href="skill/">技能</a></li>
                     <li><a href="skill/">本周解锁</a></li>
@@ -44,7 +44,7 @@
                     <ol class="nav navbar-nav">
                         <li><a id="nav-notifier" href="user/"><i class="fa fa-bell"></i></a></li>
                         <li class="dropdown">
-                            <a href="" class="dropdown-toggle avatar-small" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-rounded" width="30px" height="30px" src="photo/master/20170729/thumbnail/img-9f1f40980f210aa0684e7b0c98790010.jpg" alt="头像" /> <span class="caret"></span>
+                            <a href="" class="dropdown-toggle avatar-small" data-toggle="dropdown" aria-expanded="false"><img class="img-rounded" width="30px" height="30px" src="photo/master/20170729/thumbnail/img-9f1f40980f210aa0684e7b0c98790010.jpg" alt="头像" /> <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="user/">内堂</a></li>
@@ -61,30 +61,34 @@
     </nav>
 
     <!-- carousel -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img class="cover desktop-cover" src="images/logo/unsigned_logo.png" alt="First slide">
-                <img class="cover mobile-cover" src="images/logo/unsigned_logo_mobile.png" alt="First slide">
-                <div class="carousel-caption">
-                    <div class="input-group">
-                        <input type="text" class="form-control input-lg" placeholder="开始"><span class="input-group-addon btn btn-primary">探索</span>
+    <div class="container-fluid" id="swip-contain">
+        <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="cover desktop-cover" src="images/logo/unsigned_logo.png" alt="First slide">
+                    <img class="cover mobile-cover" src="images/logo/unsigned_logo_mobile.png" alt="First slide">
+                    <div class="carousel-caption">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-lg" placeholder="开始"><span class="input-group-addon btn btn-primary">探索</span>
+                        </div>
+                        <p class="carousel-intro">我们来自 <code>BIT</code> ，我们致力于让技能在人与人之间流动起来。</p>
+                        <p><a class="button button-glow button-raised button-rounded button-primary" href="#show-main-intro">观看短片 <i class="fa fa-angle-double-right"></i></a></p>
                     </div>
-                    <p class="carousel-intro">我们来自 <code>BIT</code> ，我们致力于让技能在人与人之间流动起来。</p>
-                    <p><a class="button button-glow button-raised button-rounded button-primary" href="#show-main-intro" role="button">观看短片 <i class="fa fa-angle-double-right"></i></a></p>
                 </div>
-            </div>
-            <div class="swiper-slide"><img class="cover desktop-cover" src="images/logo/slogan.jpg" alt="Second slide">
-                <img class="cover mobile-cover" src="images/logo/slogan_mobile.jpg" alt="Second slide"></div>
+                <div class="swiper-slide"><img class="cover desktop-cover" src="images/logo/slogan.jpg" alt="Second slide">
+                    <img class="cover mobile-cover" src="images/logo/slogan_mobile.jpg" alt="Second slide"></div>
                 <div class="swiper-slide">
                     <div class="carousel-caption">
                         <p class="carousel-intro">EXPLORE</p>
                     </div>
                 </div>
+            </div>
+            <!-- Add Arrows ->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-->
         </div>
-        <!-- Add Arrows ->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>-->
+    </div>
     </div>
     <!-- Top Content Box -->
     <div class="top-content-box">
@@ -108,7 +112,7 @@
             <h1><br/>你好，世界</h1>
             <p>黄色是在站点配色中使用最为广泛的颜色之一，因为黄色本身具有一种明朗愉快的效果。<br/> 黄色在从儿童站点直至门户型网站等几乎每一个角落中都找到了自己的发挥空间，通过结合紫色、蓝色等颜色可以得到温暖愉快的积极效果。
             </p>
-            <p><a class="btn btn-lg btn-primary" href="login.html" role="button">Sign up today</a></p>
+            <p><a class="btn btn-lg btn-primary" href="login.html">Sign up today</a></p>
             <h1><br/></h1>
         </div>
     </div>
@@ -127,7 +131,7 @@
                         <p class="descrip">官方 · 佬铁会</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -142,7 +146,7 @@
                         <p class="descrip">设计 · 珏</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -157,7 +161,7 @@
                         <p class="descrip">软件 · 游戏开发</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -172,7 +176,7 @@
                         <p class="descrip">运动 · 跑酷</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -186,7 +190,7 @@
                         <p class="title">Crossdress</p>
                         <p class="descrip">cosplay · 程序员亚文化</p>
                         <p class="option-bar">
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -201,7 +205,7 @@
                         <p class="descrip">王者荣耀 · 李浪</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -216,7 +220,7 @@
                         <p class="descrip">板绘 · WLOP</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -231,7 +235,7 @@
                         <p class="descrip">摄影 · 人像</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>
@@ -246,7 +250,7 @@
                         <p class="descrip">铁铁日记</p>
                         <p class="option-bar">
 
-                            <a href="#" class="button button-highlight button-circle" role="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button button-highlight button-circle"><i class="fa fa-plus"></i></a>
                         </p>
                     </div>
                 </div>

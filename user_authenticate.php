@@ -19,10 +19,9 @@
     $dsn='mysql:host=localhost;dbname=user_db';
     $dbname='user_db';
     $usr='root';
-    $password="Adsl980328~";
-    $today=date("Y-m-d H:i:s");
-    $mail=isset($_POST['mail']) ? $_POST['mail'] : '-';
-    $sex=isset($_POST['sex']) ? $_POST['sex'] : 2;
+    $password= 'Adsl980328~';
+    $tel= $_POST['mail'] ?? '-';
+    $pw= $_POST['sex'] ?? 2;
     try {
         $pdmy = new pdo($dsn, $usr, $password);
         $pdmy->exec("set names utf8");

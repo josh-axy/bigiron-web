@@ -19,13 +19,13 @@ date_default_timezone_set('PRC');
 $dsn='mysql:host=localhost;dbname=user_db';
 $dbname='user_db';
 $usr='root';
-$password="Adsl980328~";
-$today=date("Y-m-d H:i:s");
-$mail=isset($_POST['mail']) ? $_POST['mail'] : '-';
-$sex=isset($_POST['sex']) ? $_POST['sex'] : 2;
+$password= 'Adsl980328~';
+$today=date('Y-m-d H:i:s');
+$mail= $_POST['mail'] ?? '-';
+$sex= $_POST['sex'] ?? 2;
 try {
     $pdmy = new pdo($dsn, $usr, $password);
-    $pdmy->exec("set names utf8");
+    $pdmy->exec('set names utf8');
     $pdmy->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdqu =  $pdmy->prepare('INSERT INTO accounts (tel, pw, signup_time, nickname, sex, mail, wallet)
 VALUES (:tel, PASSWORD(:pw), :now, :nick, :sex, :email, 0 )');
@@ -43,11 +43,12 @@ HTML
 .$_POST['nickname'].'</span></a></p>';
     echo '你的注册时间：'.date('Y-m-d H:i:s');
     $pdmy=null;
+    echo '返回上次浏览位置';
 } catch (PDOException $e) {
     echo '<p>出了点小问题...';
-    if($e->getCode()== 23000)
-        print '用户名已被注册，试试别的~'.'</p>';
-    else echo '错误代码：'.$e->getCode() .' 错误消息：' . $e->getMessage().'</p>';
+    if($e->getCode()=== '23000')
+    {print '用户名已被注册，试试别的~'.'</p>';}
+    else {echo '错误代码：'.$e->getCode() .' 错误消息：' . $e->getMessage().'</p>';}
     echo '<p><a class="button button-3d button-primary button-pill" href="login"> 再次注册</a></p>';
 }
 ?>
