@@ -20,31 +20,24 @@
     $dbname='user_db';
     $usr='user';
     $password= 'bigironuser';
-    $tel= $_POST['mail'] ?? '-';
     try {
         $pdmy = new pdo($dsn, $usr, $password);
         $pdmy->exec('set names utf8');
         $pdmy->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $pdqu =  $pdmy->prepare('SELECT FROM accounts (tel, pw, signup_time, nickname, sex, mail, wallet)
-VALUES (:tel, PASSWORD(:pw), :now, :nick, :sex, :email, 0 )');
+        $pdqu =  $pdmy->prepare('SELECT tel,pw FROM accounts WHERE tel=:tel AND pw=PASSWORD(:pw)' );
         $pdqu->bindParam(':tel',$_POST['tel']);
         $pdqu->bindParam(':pw',$_POST['password']);
-        $pdqu->bindParam(':now',$today);
-        $pdqu->bindParam(':nick', $_POST['nickname']);
-        $pdqu->bindParam(':sex',$sex);
-        $pdqu->bindParam(':email',$mail);
         if($pdqu->execute())
             echo <<<'HTML'
-<p class="notify">Hey, 注册成功！</p>
-<p><a class="button button-3d button-primary button-pill" href="login">欢迎入会，<span id="nickname">
+<p class="notify">Hey, 登陆成功！</p>
+<p><a class="button button-3d button-primary button-pill" href="login"><span id="nickname">
 HTML
-                .$_POST['nickname'].'</span></a></p>';
-        echo '你的注册时间：'.date('Y-m-d H:i:s');
+                .$_POST['nickname'].'</span>，欢迎回家</a></p>';
+        echo '你的登陆时间：'.date('Y-m-d H:i:s');
         $pdmy=null;
     } catch (PDOException $e) {
-        echo '<p class="notify">出了点小问题...</p>';
-        echo 'Connection failed: ' . $e->getMessage();
-        echo '<p><a class="button button-3d button-primary button-pill" href="login"> 再次注册</a></p>';
+        echo '<p class="notify">出了点小问题...错误代码：'.$e->getCode() .' 错误消息：' . $e->getMessage().'</p>';
+        echo '<p><a class="button button-3d button-primary button-pill" href="login"> 再次登陆</a></p>';
     }
     ?>
 </div>

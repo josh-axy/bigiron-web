@@ -38,16 +38,16 @@ VALUES (:tel, PASSWORD(:pw), :now, :nick, :sex, :email, 0 )');
     if($pdqu->execute())
         echo <<<'HTML'
 <p class="notify">Hey, 注册成功！</p>
-<p><a class="button button-3d button-primary button-pill" href="login">欢迎入会，<span id="nickname">
+<p><a class="button button-3d button-primary button-pill" href="login"><span id="nickname">
 HTML
-.$_POST['nickname'].'</span></a></p>';
-    echo '入会时间：'.date('Y-m-d H:i:s');
+.$_POST['nickname'].'</span>,&nbsp欢迎入会</a></p>';
+    echo '<br><p>入会时间：'.date('Y-m-d H:i:s').'</p>';
     $pdmy=null;
-    echo '<p><a href="index.html">返回登陆前页面</a></p>';
+    echo '<br><p><a href="login">返回登陆页</a></p>';
 } catch (PDOException $e) {
     echo '<p>出了点小问题...';
     if('23000' === $e->getCode()) {
-        print '用户名已被注册，试试别的~'.'</p>';
+        print ' 用户名已被注册，试试别的~'.'</p>';
     }
     else {
         echo '错误代码：'.$e->getCode() .' 错误消息：' . $e->getMessage().'</p>';

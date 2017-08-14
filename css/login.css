@@ -14,7 +14,7 @@ html, body {
 }
 
 #return-index {
-    margin-top: 150px;
+    margin-top: 75px;
     width: 250px;
     height: auto;
 }
@@ -24,6 +24,10 @@ html, body {
     padding: 0 35px;
     font-family: "Microsoft YaHei UI Light", "Microsoft YaHei", sans-serif!important;
     color: #eaeaea;
+}
+
+.warning{
+    border-color: red!important;
 }
 
 .notify {
@@ -131,6 +135,9 @@ p.optional{
     }
 }
 @media (min-width: 1000px) {
+    #return-index {
+        margin-top: 150px!important;
+    }
     .carousel-inner {
         margin: -200px 0px 0px -100px;
         position: relative;

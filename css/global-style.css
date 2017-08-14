@@ -1,24 +1,5 @@
 body {
-    padding-bottom: 40px;
-    font-family: 'Microsoft YaHei thin', sans-serif;
-    background-color: #fff;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Microsoft Yahei', sans-serif;
-}
-
-.navbar-inverse {
-    background: #24292e;
-    font-family: 'Microsoft YaHei UI bold', 'Microsoft YaHei', sans-serif;
-    border-color: transparent;
-    margin: 0px!important;
-}
-
-#navbar a {
-    transition: color 0.5s ease-in-out;
+    font-family: 'Microsoft YaHei', sans-serif;
 }
 
 .button{

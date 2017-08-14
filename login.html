@@ -12,7 +12,7 @@
     <title>登录佬铁会</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/Buttons/2.0.0/css/buttons.min.css" rel="stylesheet">
-    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/global-style.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/login.css?v=2.5" rel="stylesheet">
 
@@ -40,7 +40,7 @@
         <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" required><span id="tel-err" class="err">× 要输入有效的电话噢</span>
         <input id="signNickname" class="form-control" name="nickname" placeholder="昵称" required><span id="nickname-err" class="err">× 这个昵称太花哨啦</span>
         <label for="signPw" class="sr-only">Password</label>
-        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err" class="err">× 使用8-15位密码，至少有大写字母或特殊符号</span>
+        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err" class="err">× 使用8-15位密码吧</span>
         <input type="password" id="confirmPw" autocomplete="off" class="form-control" name="confirm" placeholder="确认密码" required><span id="confirm-err" class="err"></span>
         <p class="optional">- 选填 -</p>
         你是：<input type="radio" id="signMale" name="sex" value="0"><label for="signMale">&nbsp爷们</label>
@@ -74,25 +74,65 @@
         $('.form-signup').addClass("sr-only");
         $('.form-signin').removeClass("sr-only");
     });
-    var submit_check=[0,0,0,0];
-    function judgeItem(item, err, callup, id) {
-        if(!callup(item.val())){
-            item.css("border-color","red");
-            err.css("height","20px");
-            submit_check[id]=0;
-        }
-        else{
-            item.css("border-color","rgb(204,204,204)");
-            err.css("height","0px");
-            submit_check[id]=1;
-        }
-    }
+
     $(document).ready(function () {
+        var submit_check=[0,0,0,0];
+        var err_msg=["× 要输入有效的电话噢","× 这个昵称太花哨啦","× 使用8-15位密码吧"];
+        var err_dup=["× 手机号重复啦","× 用户名重复啦"];
         var signTel= $('#signTel');
         var signNick=$('#signNickname');
         var signPw= $('#signPw');
         var confirmPw= $('#confirmPw');
         var submit=$('#register');
+        var key="";
+        function show_err(item, err, msg) {
+            err.html(msg);
+            item.addClass("warning");
+            err.css("height","20px");
+        }
+        function close_err(item, err, msg) {
+            err.css("height","20px");
+            err.html(msg);
+            item.removeClass("warning");
+
+            setTimeout(function () {
+                err.css("height","0px");
+            },700);
+        }
+        function judgeItem(item, err, callup, id) {
+            if(!callup(item.val())){
+                show_err(item, err, err_msg[id]);
+                submit_check[id]=0;
+            }
+            else{
+                if(id<=1){
+                    if(id)
+                        key=+"nick="+item.val();
+                    else
+                        key="tel="+item.val();
+                    $.ajax({
+                        url:'check_duplicate.php',
+                        data:"tel="+item.val(),
+                        type:"post",
+                        success:function (data) {
+                            switch (data){
+                                case "0": show_err(item, err, err_dup[id]);
+                                submit_check[id]=0;
+                                break;
+                                case "1": if(!submit_check[id]) close_err(item, err, "√ 可以使用~");
+                                submit_check[id]=1;
+                                break;
+                            }
+                        }
+                    })
+                }
+                else {
+                    item.removeClass("warning");
+                    err.css("height","0px");
+                    submit_check[id]=1;
+                }
+            }
+        }
         signTel.blur(function () {
             judgeItem($('#signTel'),$('#tel-err'),isTel,0);
         });
@@ -104,12 +144,12 @@
         });
         confirmPw.blur(function () {
             if(confirmPw.val()!==signPw.val()){
-                confirmPw.css("border-color","red");
+                confirmPw.addClass("warning");
                 $('#confirm-err').html('× 密码不一致!');
                 submit_check[3]=0;
             }
             else {
-                confirmPw.css("border-color","rgb(204,204,204)");
+                confirmPw.removeClass("warning");
                 $('#confirm-err').html('');
                 submit_check[3]=1;
             }
@@ -130,7 +170,7 @@
             var ptrn=/[A-Z]/;
             var ptrn2 = /[\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e]+/;
             var lenp=/^\S{8,15}$/;
-            return (main.test(s) && (ptrn.test(s) || ptrn2.test(s)) && lenp.test(s));
+            return (main.test(s) && lenp.test(s));
         }
         function isNick(s) {
             var pattern=/^(?!_)(?!\d)[\u2E80-\uFE4F\x21-\x7e\u00b7\u300e\u2014\u300f\uff01]{1,20}$/;
