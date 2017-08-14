@@ -1,11 +1,4 @@
 /*Global Customize*/
-@font-face {
-  font-family: 'Ajiwai';
-  src: url('../fonts/Ajiwai.ttf') format('truetype'),
-      url('../fonts/Base 02.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
     padding-bottom: 40px;
@@ -19,25 +12,17 @@ h3 {
     font-family: 'Microsoft Yahei', sans-serif;
 }
 
-.navbar-inverse {
-    background: #24292e;
-    font-family: 'Microsoft YaHei UI bold', 'Microsoft YaHei', sans-serif;
-    border-color: transparent;
-    margin: 0!important;
+.button{
+    font-family:"Microsoft YaHei UI","Microsoft YaHei","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif!important;
 }
 
-#navbar a {
-    transition: color 0.5s ease-in-out;
-}
-.fontsdebug{
-    font-family: "Ajiwai","Microsoft YaHei UI","sans-serif";
-}
 
 /* 导航栏样式
 --------------------------------------------------*/
 
 .header-search-input {
-    background-color: rgb(63, 67, 71);
+    /*background-color: rgb(63, 67, 71);*/
+    background-color: rgba(240,240,240,.6);
     border-color: transparent;
     width: 200px!important;
     font-weight: normal;
@@ -46,33 +31,57 @@ h3 {
 .navbar-brand {
     margin: -8px -5px 5px 5px;
 }
-
+.navbar-fixed-top{
+    transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+}
 .navbar-right {
     padding-right: 30px;
 }
-
-nav {
+.navbar {
+    /*background: #24292e;*/
+    border-color: transparent;
+    margin: 0!important;
     font-size: 15px;
-    font-weight: bold;
-    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+}
+.nav .open>a, .nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent!important;
+}
+.dropdown-menu{
+    border: 0!important;
+    border-radius: 4px!important;
+}
+#navbar a {
+    transition: color 0.5s ease-in-out;
+    color: #555;
+}
+#navbar a:hover{
+    color: #337ab7;
 }
 #nav-notifier{
     font-size: 20px;
-    color: #888!important;
     margin-top: 0;
 }
 .avatar-small {
     margin: 0 0 -10px;
     position: relative;
     bottom: 4px;
-    overflow: hidden;
 }
-
+#avatar-control {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    text-align: center;
+}
 .dropdown-header {
     font-weight: normal;
 }
-
-
+#user_avatar{
+    width: 30px;
+}
 /*轮播区
 ---------------------------------*/
 
@@ -84,16 +93,20 @@ nav {
     margin-bottom: 20px;
 }
 #swip-contain{
-    background-image: linear-gradient(180deg, rgba(255,255,255,0) 60%, #fff),linear-gradient(70deg, #dbedff 32%, #ebfff0);
 
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 60%, #fff),
+    linear-gradient(70deg, #f7d6a0 32%, #ebfff0);
+}
+#swip-contain .container{
+    margin-top: 10px;
 }
 .swiper-container {
     margin-top: 50px;
-    width: auto;
-    height: 300px;
     background: #FFF;
     color: white;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
     box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
 }
 
@@ -143,6 +156,8 @@ nav {
 .top-content-box {
     box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
     padding: 10px 0 23px;
+    position: relative;
+    z-index: 20;
 }
 
 .intro-background {
@@ -157,7 +172,12 @@ nav {
     line-height: 2em;
     font-size: 1.4em;
 }
-
+#main-intro{
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+    padding: 10px 0 23px;
+    position: relative;
+    z-index: 20;
+}
 #show-main-intro {
     margin: 0 auto;
     text-align: justify;
@@ -169,12 +189,13 @@ nav {
 -------------------------------*/
 
 .main-content-box {
-    margin-top: 10px;
-    padding-top: 10px;
+    padding-top: 30px;
     background-blend-mode: normal, multiply;
     background-size: cover;
     background: rgb(248, 250, 252) linear-gradient(to top, #fff 0%, #f8fafc 100%) no-repeat fixed center center;
     border-radius: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .button-circle {
@@ -237,17 +258,17 @@ nav {
     line-height: 2em;
     display: none;
 }
+
 .carousel-caption{
     bottom: 0!important;
     padding-bottom: 0!important;
 }
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media(min-width:1920px) {
+@media(min-width:1020px) {
     .cover {
-        width: 100%;
+        width: 2000px;
         height: auto;
         overflow: hidden;
     }
@@ -287,7 +308,6 @@ nav {
     /* Bump up size of carousel content */
     .swiper-slide,
     .carousel-caption p {
-        margin-bottom: 20px;
         font-size: 21px;
         line-height: 1.4;
     }
@@ -306,10 +326,6 @@ nav {
 }
 
 @media(max-width:768px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none!important;
-    }
     #show-main-intro {
         width: 70%;
         line-height: 60px;

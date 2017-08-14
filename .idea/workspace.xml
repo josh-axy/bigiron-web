@@ -2,25 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a71f7d74-f6e3-4da0-9eca-d5f59c60cb21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/BigIron_Git.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b615be9c-3502-4028-99aa-e2e42bd73107.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/iko.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/webResources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.iml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/maineffects.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/helloworld.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/index-main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/welcome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/响应式导航栏.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo/slogan.jpg" afterPath="$PROJECT_DIR$/images/logo/slogan.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo/unsigned_logo.png" afterPath="$PROJECT_DIR$/images/logo/unsigned_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/-1ad3e0c33b4614a2.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/-1ad3e0c33b4614a2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/3375-2.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/3375-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/37F62E398CA324E783DDFA86177D57D6.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/37F62E398CA324E783DDFA86177D57D6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/62081492391739.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/62081492391739.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/9118A598BBFFDA9B3C9858BC49B1C857.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/9118A598BBFFDA9B3C9858BC49B1C857.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/9129B1CEAEAEB39F662E4946B765A7F8.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/9129B1CEAEAEB39F662E4946B765A7F8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/FAAB4E74C93A01F0D79C57C23F373325.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/FAAB4E74C93A01F0D79C57C23F373325.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_20170510_114644.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_20170510_114644.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_3320.JPG" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_3320.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_3589.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_3589.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_3622.JPG" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/IMG_3622.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/a898defcc3cec3fd8572b7e8d188d43f8694276c.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/a898defcc3cec3fd8572b7e8d188d43f8694276c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-086fa14e7cf24bc250b7186cf06d0911.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-086fa14e7cf24bc250b7186cf06d0911.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-11278e4b83238c43b32887853c99c2a2.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-11278e4b83238c43b32887853c99c2a2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-160342706af9d524829db6d265e2a96e.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-160342706af9d524829db6d265e2a96e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-17b6b94d2e58f023616b4f5854de0e09.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-17b6b94d2e58f023616b4f5854de0e09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-3ba35f7c4fd0bdb816c5cf0455353e7a.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-3ba35f7c4fd0bdb816c5cf0455353e7a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-4f6b0ec8e53d2226fcf40b6891b07a17.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-4f6b0ec8e53d2226fcf40b6891b07a17.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-75cd14dec34ca2faa93f9f5a3a4a6aff.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-75cd14dec34ca2faa93f9f5a3a4a6aff.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-9f1f40980f210aa0684e7b0c98790010.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-9f1f40980f210aa0684e7b0c98790010.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-a84ae6ba10709939adce1bf146791ff7.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-a84ae6ba10709939adce1bf146791ff7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-b81cc16bcf7a2589192af4483308c482.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-b81cc16bcf7a2589192af4483308c482.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-f9b9bb770096492348cc514050a9041b.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/img-f9b9bb770096492348cc514050a9041b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/null-2952e7a32696c97.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/null-2952e7a32696c97.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/old-forgotten-by-the-new-1754.jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/old-forgotten-by-the-new-1754.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo/master/20170729/thumbnail/psb (3).jpg" afterPath="$PROJECT_DIR$/photo/master/20170729/thumbnail/psb (3).jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BigIron_Git.iml" afterPath="$PROJECT_DIR$/.idea/BigIron_Git.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/buttons.css" afterPath="$PROJECT_DIR$/css/buttons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/global-style.css" afterPath="$PROJECT_DIR$/css/global-style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/login.css" afterPath="$PROJECT_DIR$/css/login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.html" afterPath="$PROJECT_DIR$/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regist.php" afterPath="$PROJECT_DIR$/regist.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/valid.php" afterPath="$PROJECT_DIR$/user_authenticate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user_authenticate.php" afterPath="$PROJECT_DIR$/user_authenticate.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,34 +100,33 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.38151658">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="regist.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="regist.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/regist.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
-                  <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+                <state relative-caret-position="322">
+                  <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
                   <folding>
-                    <marker date="1502510367944" expanded="true" signature="1128:1260" ph="INSERT INTO accounts... " />
-                    <marker date="1502510367944" expanded="true" signature="1719:1727" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="1719:1731" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="1719:1735" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="1856:1933" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="2161:2298" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="2195:2287" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="2340:2504" ph="..." />
-                    <marker date="1502510367944" expanded="true" signature="2352:2490" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="1128:1260" ph="INSERT INTO accounts... " />
+                    <marker date="1502694439325" expanded="true" signature="1719:1727" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="1719:1731" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="1719:1735" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="2215:2352" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="2249:2341" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="2394:2558" ph="..." />
+                    <marker date="1502694439325" expanded="true" signature="2406:2544" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="255" column="22" lean-forward="true" selection-start-line="255" selection-start-column="22" selection-end-line="255" selection-end-column="22" />
+                <state relative-caret-position="-2785">
+                  <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -110,18 +135,8 @@
           <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/login.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="584">
-                  <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7/css/bootstrap.min.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-12259">
-                  <caret line="4" column="36096" lean-forward="false" selection-start-line="4" selection-start-column="36084" selection-end-line="4" selection-end-column="36096" />
+                <state relative-caret-position="3243">
+                  <caret line="141" column="35" lean-forward="false" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -130,12 +145,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2633">
-                  <caret line="177" column="1" lean-forward="false" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
+                <state relative-caret-position="-60">
+                  <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="global-style.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/global-style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -144,20 +169,33 @@
           <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-667">
-                  <caret line="123" column="30" lean-forward="false" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+                <state relative-caret-position="1035">
+                  <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user_authenticate.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="user_authenticate.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/user_authenticate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+                <state relative-caret-position="644">
+                  <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
                   <folding>
-                    <marker date="1502531467400" expanded="true" signature="1150:1282" ph="INSERT INTO accounts... " />
+                    <marker date="1502694935998" expanded="true" signature="1121:1253" ph="SELECT FROM accounts... " />
+                    <marker date="1502694935998" expanded="true" signature="1127:1253" ph="INSERT INTO accounts... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="maineffects.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/maineffects.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="299">
+                  <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -183,7 +221,6 @@
       <find>button</find>
       <find>bottom</find>
       <find>no</find>
-      <find>carousel</find>
       <find>noti</find>
       <find>margin-bottom</find>
       <find>success</find>
@@ -195,6 +232,15 @@
       <find>carousel-caption</find>
       <find>padding-bottom</find>
       <find>class=&quot;err&quot;</find>
+      <find>nav</find>
+      <find>.cover</find>
+      <find>.navbar</find>
+      <find>swip-cont</find>
+      <find>nav-noti</find>
+      <find>navbar-f</find>
+      <find>thumbnail</find>
+      <find>jpg</find>
+      <find>carousel</find>
     </findStrings>
     <replaceStrings>
       <replace>err err</replace>
@@ -219,8 +265,6 @@
         <option value="$PROJECT_DIR$/sample/settings.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/pages/views.py" />
-        <option value="$PROJECT_DIR$/css/buttons.css" />
-        <option value="$PROJECT_DIR$/css/global-style.css" />
         <option value="$PROJECT_DIR$/index4.html" />
         <option value="$PROJECT_DIR$/js/access.js" />
         <option value="$PROJECT_DIR$/helloworld.php" />
@@ -229,13 +273,17 @@
         <option value="$PROJECT_DIR$/js/swiper.jquery.umd.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/design.md" />
-        <option value="$PROJECT_DIR$/css/login.css" />
         <option value="/JSRegexp Fragment (login.html:4373).regexp" />
-        <option value="$PROJECT_DIR$/regist.php" />
+        <option value="$PROJECT_DIR$/css/buttons.css" />
+        <option value="$PROJECT_DIR$/css/global-style.css" />
+        <option value="$PROJECT_DIR$/css/login.css" />
         <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/user_authenticate.php" />
+        <option value="$PROJECT_DIR$/js/index-main.js" />
+        <option value="$PROJECT_DIR$/js/maineffects.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/regist.php" />
+        <option value="$PROJECT_DIR$/user_authenticate.php" />
       </list>
     </option>
   </component>
@@ -292,7 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -300,30 +347,6 @@
             <path>
               <item name="BigIron_Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigIron_Git" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BigIron_Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIron_Git" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap-3.3.7" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BigIron_Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIron_Git" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap-3.3.7" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BigIron_Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIron_Git" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap-3.3.7" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="BigIron_Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BigIron_Git" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap-3.3.7" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="BigIron_Git" type="b2602c69:ProjectViewProjectNode" />
@@ -339,6 +362,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,7 +506,9 @@
       <workItem from="1502437633712" duration="1057000" />
       <workItem from="1502438708138" duration="340000" />
       <workItem from="1502439067456" duration="287000" />
-      <workItem from="1502439372986" duration="34130000" />
+      <workItem from="1502439372986" duration="55098000" />
+      <workItem from="1502590916621" duration="7100000" />
+      <workItem from="1502605556727" duration="11426000" />
     </task>
     <task id="LOCAL-00001" summary="大幅更新，美化与优化多处细节">
       <created>1501982489999</created>
@@ -526,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502436481596</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成数据库连接+美化反馈界面">
+      <created>1502543224973</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1502543224973</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108632000" />
+    <option name="totallyTimeSpent" value="148126000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,9 +651,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/views.py" />
-    <entry file="file://$PROJECT_DIR$/sample/urls.py" />
-    <entry file="file://$PROJECT_DIR$/sample/views.py" />
     <entry file="file://$PROJECT_DIR$/pages/html/index.html" />
     <entry file="file://$PROJECT_DIR$/indexdesign.ipynb" />
     <entry file="file://$PROJECT_DIR$/design.ipynb" />
@@ -635,13 +665,6 @@
     <entry file="file://$PROJECT_DIR$/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/templates/test.html" />
     <entry file="file://$PROJECT_DIR$/pages/views.py" />
-    <entry file="file://$PROJECT_DIR$/css/global-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/debug_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -649,13 +672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index4.html" />
     <entry file="file://$PROJECT_DIR$/index_bak_.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -673,13 +690,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Template/Learning_PHP-master/runner.php" />
-    <entry file="file://$PROJECT_DIR$/helloworld.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld.php" />
     <entry file="file://$PROJECT_DIR$/sample.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -694,13 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/响应式导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/响应式导航栏.html" />
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -715,20 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="103" column="22" lean-forward="false" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/welcome.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/50a8d148-2fda-4c83-a0d9-3b571f8ad8ac/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -740,13 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index-main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -810,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12259">
           <caret line="4" column="36096" lean-forward="false" selection-start-line="4" selection-start-column="36084" selection-end-line="4" selection-end-column="36096" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,63 +805,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/login.css">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="294">
+          <caret line="1746" column="0" lean-forward="false" selection-start-line="1746" selection-start-column="0" selection-end-line="1746" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <marker date="1502531467400" expanded="true" signature="1150:1282" ph="INSERT INTO accounts... " />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/images/icon/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regist.php">
+    <entry file="file://$PROJECT_DIR$/index-v4.html" />
+    <entry file="file://$PROJECT_DIR$/js/maineffects.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
-            <marker date="1502510367944" expanded="true" signature="1128:1260" ph="INSERT INTO accounts... " />
-            <marker date="1502510367944" expanded="true" signature="1719:1727" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="1719:1731" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="1719:1735" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="1856:1933" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="2161:2298" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="2195:2287" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="2340:2504" ph="..." />
-            <marker date="1502510367944" expanded="true" signature="2352:2490" ph="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="123" column="30" lean-forward="false" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2633">
-          <caret line="177" column="1" lean-forward="false" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
+        <state relative-caret-position="-60">
+          <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/buttons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="107" column="24" lean-forward="false" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="255" column="22" lean-forward="true" selection-start-line="255" selection-start-column="22" selection-end-line="255" selection-end-column="22" />
+        <state relative-caret-position="-2785">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3243">
+          <caret line="141" column="35" lean-forward="false" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <marker date="1502694439325" expanded="true" signature="1128:1260" ph="INSERT INTO accounts... " />
+            <marker date="1502694439325" expanded="true" signature="1719:1727" ph="..." />
+            <marker date="1502694439325" expanded="true" signature="1719:1731" ph="..." />
+            <marker date="1502694439325" expanded="true" signature="1719:1735" ph="..." />
+            <marker date="1502694439325" expanded="true" signature="2215:2352" ph="..." />
+            <marker date="1502694439325" expanded="true" signature="2249:2341" ph="..." />
+            <marker date="1502694439325" expanded="true" signature="2394:2558" ph="..." />
+            <marker date="1502694439325" expanded="true" signature="2406:2544" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <marker date="1502694935998" expanded="true" signature="1121:1253" ph="SELECT FROM accounts... " />
+            <marker date="1502694935998" expanded="true" signature="1127:1253" ph="INSERT INTO accounts... " />
+          </folding>
         </state>
       </provider>
     </entry>

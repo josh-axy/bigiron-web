@@ -18,8 +18,8 @@
 date_default_timezone_set('PRC');
 $dsn='mysql:host=localhost;dbname=user_db';
 $dbname='user_db';
-$usr='root';
-$password= 'Adsl980328~';
+$usr='user';
+$password= 'bigironuser';
 $today=date('Y-m-d H:i:s');
 $mail= $_POST['mail'] ?? '-';
 $sex= $_POST['sex'] ?? 2;
@@ -41,14 +41,17 @@ VALUES (:tel, PASSWORD(:pw), :now, :nick, :sex, :email, 0 )');
 <p><a class="button button-3d button-primary button-pill" href="login">欢迎入会，<span id="nickname">
 HTML
 .$_POST['nickname'].'</span></a></p>';
-    echo '你的注册时间：'.date('Y-m-d H:i:s');
+    echo '入会时间：'.date('Y-m-d H:i:s');
     $pdmy=null;
-    echo '返回上次浏览位置';
+    echo '<p><a href="index.html">返回登陆前页面</a></p>';
 } catch (PDOException $e) {
     echo '<p>出了点小问题...';
-    if($e->getCode()=== '23000')
-    {print '用户名已被注册，试试别的~'.'</p>';}
-    else {echo '错误代码：'.$e->getCode() .' 错误消息：' . $e->getMessage().'</p>';}
+    if('23000' === $e->getCode()) {
+        print '用户名已被注册，试试别的~'.'</p>';
+    }
+    else {
+        echo '错误代码：'.$e->getCode() .' 错误消息：' . $e->getMessage().'</p>';
+    }
     echo '<p><a class="button button-3d button-primary button-pill" href="login"> 再次注册</a></p>';
 }
 ?>

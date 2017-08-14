@@ -21,9 +21,6 @@ h3 {
     transition: color 0.5s ease-in-out;
 }
 
-@font-face {
-  font-family: 'AjiwaiPro';
-  src: url('../fonts/Ajiwai.ttf') format('truetype'), url('../fonts/Base 02.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+.button{
+    font-family:"Microsoft YaHei UI","Microsoft YaHei","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif!important;
 }

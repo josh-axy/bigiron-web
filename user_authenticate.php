@@ -18,15 +18,14 @@
     date_default_timezone_set('PRC');
     $dsn='mysql:host=localhost;dbname=user_db';
     $dbname='user_db';
-    $usr='root';
-    $password= 'Adsl980328~';
+    $usr='user';
+    $password= 'bigironuser';
     $tel= $_POST['mail'] ?? '-';
-    $pw= $_POST['sex'] ?? 2;
     try {
         $pdmy = new pdo($dsn, $usr, $password);
-        $pdmy->exec("set names utf8");
+        $pdmy->exec('set names utf8');
         $pdmy->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $pdqu =  $pdmy->prepare('INSERT INTO accounts (tel, pw, signup_time, nickname, sex, mail, wallet)
+        $pdqu =  $pdmy->prepare('SELECT FROM accounts (tel, pw, signup_time, nickname, sex, mail, wallet)
 VALUES (:tel, PASSWORD(:pw), :now, :nick, :sex, :email, 0 )');
         $pdqu->bindParam(':tel',$_POST['tel']);
         $pdqu->bindParam(':pw',$_POST['password']);
