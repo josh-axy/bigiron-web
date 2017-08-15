@@ -5,7 +5,7 @@ $dbname='user_db';
 $usr='user';
 $password= 'bigironuser';
 $tel = $_POST['tel'] ?? '/';
-$nick = $_POST['nickname'] ?? '/';
+$nick = $_POST['nick'] ?? '/';
 try {
     $pdmy = new pdo($dsn, $usr, $password);
     $pdmy->exec('set names utf8');
