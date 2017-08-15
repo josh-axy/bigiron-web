@@ -7,3 +7,6 @@
 *.iml
 out
 gen
+/regist.php
+/check_duplicate.php
+/user_authenticate.php

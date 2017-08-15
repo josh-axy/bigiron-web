@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="佬铁会 官网 技能共享 交流 社区 平台">
+    <meta name="author" content="佬铁会">
     <link href="images/icon/site_logo_small.ico" rel="shortcut icon">
     <title>登录佬铁会</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -38,9 +36,9 @@
     <form class="form-signup sr-only" method="post" action="regist.php">
         <label for="signTel" class="sr-only">Tel Number</label>
         <input type="tel" id="signTel" class="form-control" name="tel" placeholder="手机" required><span id="tel-err" class="err">× 要输入有效的电话噢</span>
-        <input id="signNickname" class="form-control" name="nickname" placeholder="昵称" required><span id="nickname-err" class="err">× 这个昵称太花哨啦</span>
+        <input id="signNickname" class="form-control" name="nickname" placeholder="昵称" required><span id="nickname-err" class="err">× 不要以_和数开头~限长20位</span>
         <label for="signPw" class="sr-only">Password</label>
-        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err" class="err">× 使用8-15位密码吧</span>
+        <input type="password" id="signPw" autocomplete="off" class="form-control" name="password" placeholder="填写密码" required><span id="pw-err" class="err">× 8-15位，要包含数字和字母~</span>
         <input type="password" id="confirmPw" autocomplete="off" class="form-control" name="confirm" placeholder="确认密码" required><span id="confirm-err" class="err"></span>
         <p class="optional">- 选填 -</p>
         你是：<input type="radio" id="signMale" name="sex" value="0"><label for="signMale">&nbsp爷们</label>
@@ -77,7 +75,7 @@
 
     $(document).ready(function () {
         var submit_check=[0,0,0,0];
-        var err_msg=["× 要输入有效的电话噢","× 这个昵称太花哨啦","× 使用8-15位密码吧"];
+        var err_msg=["× 要输入有效的电话噢","× 不要以数字和_开头~限长20位","× 8-15位，要包含数字和字母~"];
         var err_dup=["× 手机号重复啦","× 用户名重复啦"];
         var signTel= $('#signTel');
         var signNick=$('#signNickname');
@@ -96,8 +94,10 @@
             item.removeClass("warning");
 
             setTimeout(function () {
-                err.css("height","0px");
-            },700);
+                if(!item.hasClass('warning')) {
+                    err.css("height","0px");
+                }
+            },1000);
         }
         function judgeItem(item, err, callup, id) {
             if(!callup(item.val())){
@@ -107,19 +107,19 @@
             else{
                 if(id<=1){
                     if(id)
-                        key=+"nick="+item.val();
+                        key="nick="+item.val();
                     else
                         key="tel="+item.val();
                     $.ajax({
                         url:'check_duplicate.php',
-                        data:"tel="+item.val(),
+                        data:key,
                         type:"post",
                         success:function (data) {
                             switch (data){
                                 case "0": show_err(item, err, err_dup[id]);
                                 submit_check[id]=0;
                                 break;
-                                case "1": if(!submit_check[id]) close_err(item, err, "√ 可以使用~");
+                                case "1": if(!submit_check[id]) close_err(item, err, "可以使用这个~");
                                 submit_check[id]=1;
                                 break;
                             }
@@ -133,17 +133,17 @@
                 }
             }
         }
-        signTel.blur(function () {
+        signTel.keyup(function () {
             judgeItem($('#signTel'),$('#tel-err'),isTel,0);
         });
-        signNick.blur(function () {
+        signNick.keyup(function () {
             judgeItem($('#signNickname'),$('#nickname-err'),isNick,1);
         });
         signPw.blur(function () {
             judgeItem($('#signPw'),$('#pw-err'),isPw,2);
         });
         confirmPw.blur(function () {
-            if(confirmPw.val()!==signPw.val()){
+            if(confirmPw.val()!=="" && confirmPw.val()!==signPw.val()){
                 confirmPw.addClass("warning");
                 $('#confirm-err').html('× 密码不一致!');
                 submit_check[3]=0;
@@ -166,11 +166,8 @@
             return pattern.test(s);
         }
         function isPw(s) {
-            var main=/^[\x21-\x7e]+$/;
-            var ptrn=/[A-Z]/;
-            var ptrn2 = /[\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e]+/;
-            var lenp=/^\S{8,15}$/;
-            return (main.test(s) && lenp.test(s));
+            var ptrn=/^(?![^a-zA-Z]+$)(?!\D+$)[\x2a-\x7e]{8,15}$/;
+            return ptrn.test(s);
         }
         function isNick(s) {
             var pattern=/^(?!_)(?!\d)[\u2E80-\uFE4F\x21-\x7e\u00b7\u300e\u2014\u300f\uff01]{1,20}$/;
