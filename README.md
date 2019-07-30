@@ -1,22 +1,12 @@
 # BigIron
 佬铁会 - 网站项目
 
-约定符号：
+1. 首页 | index.html
 
---(网页属性)
---【目录】
---<数据库信息>
---静态或伪静态页面.html
---非静态页面.php
+   - 登陆(注册) | login.html
+   - 身份验证 | authenticate.php
+   - 注册 | regist.php
 
-佬铁会://47.94.91.81/
-
-1--首页 | index.html
-|--1.0--登陆(注册) | login.html
-|--1.0.1--身份验证 | authenticate.php
-|--1.0.2--注册 | regist.php
-反馈
-招募
 
 2--【门类社群】 | union/index.html（专题页）
 |--2.0--社群管理 | management.html
