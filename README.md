@@ -1,6 +1,7 @@
 # BigIron  
 佬铁会 - 网站项目  
   
+```
 |-- 首页 `/`  
 |  |-- 登陆(注册) `login`  
 |  |-- 身份验证 `authenticate`  
@@ -37,3 +38,4 @@
 |  |  |-- 活动审核 `confirm`  
 |  |  |-- 活动管理 `management`  
 |  |-- 讨论区 | `discuss`  
+```
