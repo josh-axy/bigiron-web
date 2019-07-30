@@ -2,11 +2,11 @@
 佬铁会 - 网站项目  
   
 ├── 首页 `index.html`  
-│ ├── 登陆(注册) `login.html`  
-│ ├── 身份验证 `authenticate.php`  
-│ ├── 注册 `regist.php`  
-2--【门类社群】 | union/index.html（专题页）  
-|--2.0--社群管理 | management.html  
+│   ├── 登陆(注册) `login.html`  
+│   ├── 身份验证 `authenticate.php`  
+│   └── 注册 `regist.php`  
+├──【门类社群】 | `union/index.html`  
+|--2.0--社群管理 | `management.html`  
 |--|--2.0.0--生效 | operation.php  
 |--2.1--【论坛区】 | hub/index.html  
 |--|--2.2.1--列表 | list  
