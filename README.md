@@ -11,7 +11,7 @@
 
 佬铁会://47.94.91.81/
 
-1--首页 | index.html（综合推广）
+1--首页 | index.html
 |--1.0--登陆(注册) | login.html
 |--1.0.1--身份验证 | authenticate.php
 |--1.0.2--注册 | regist.php
